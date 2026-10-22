@@ -1,0 +1,1865 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>General Surgery call guide</title><style>
+:root{--bg:#F6F8FB;--fg:#16233A;--muted:#52627C;--accent:#12305B;--cyan:#0A8FC4;--card:#FFFFFF;--line:#D3DCE9;--paper:#FFFFFF;--tint:#EAF4FB;--warn:#FFF3D1;--warnline:#C58B1B;}
+@media (prefers-color-scheme: dark){:root{color-scheme:dark;--bg:#0E1626;--fg:#E6ECF5;--muted:#A4B4CB;--accent:#8FD0F5;--cyan:#6CC4F0;--card:#16233A;--line:#2B3A55;--paper:#F4F7FB;--tint:#17304A;--warn:#3A3115;--warnline:#D9A93B;}}
+*{box-sizing:border-box}
+html{scroll-padding-top:84px}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 "Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif}
+a{color:var(--cyan)}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--cyan);outline-offset:3px;border-radius:4px}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+header .wrap>p,header .rules,.when,details,.note,section>p,section>h2,section>h3{max-width:760px}
+header{padding:36px 0 8px}
+h1{font-size:2rem;line-height:1.2;margin:0 0 10px;color:var(--accent);letter-spacing:-.01em}
+h2{font-size:1.5rem;line-height:1.25;margin:0 0 6px;color:var(--accent)}
+h3{font-size:1.1rem;margin:26px 0 8px;color:var(--accent)}
+.lede{font-size:1.1rem;color:var(--muted);margin:0 0 18px}
+.rules{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--cyan);border-radius:10px;padding:16px 20px;margin:18px 0}
+.rules h2{font-size:1.1rem;margin-bottom:8px}
+.rules ol{margin:0;padding-left:22px}.rules li{margin:6px 0}
+nav.jump{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 0}
+nav.jump .wrap{display:flex;flex-wrap:wrap;gap:6px 8px}
+nav.jump a{font-size:.88rem;text-decoration:none;color:var(--fg);background:var(--card);border:1px solid var(--line);padding:5px 11px;border-radius:999px}
+nav.jump a:hover{border-color:var(--cyan)}
+section{padding:34px 0 10px;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0}
+.when{color:var(--muted);margin:0 0 14px}
+.chart{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 8px;margin:14px 0}
+.chart svg{display:block;width:100%;height:auto;max-width:900px;margin:0 auto}
+.chart svg g[id^="jump__"]{cursor:pointer}
+.chart svg text[data-go]:hover{text-decoration:underline;fill:#0B3F7A}
+.chart svg text[data-go]:focus-visible{outline:2px solid var(--cyan)}
+.chart svg g[id^="jump__"]:focus-visible{outline:3px solid var(--cyan);outline-offset:2px}
+.key{display:flex;flex-wrap:wrap;gap:8px 14px;font-size:.88rem;color:var(--muted);margin:10px 0 0}
+.key span{display:inline-flex;align-items:center;gap:6px}
+.key i{width:14px;height:14px;border-radius:4px;border:2px solid;display:inline-block}
+details{background:var(--card);border:1px solid var(--line);border-radius:10px;margin:12px 0;padding:0}
+summary{cursor:pointer;padding:12px 16px;font-weight:600;color:var(--accent)}
+details[open] summary{border-bottom:1px solid var(--line)}
+details .in{padding:6px 18px 14px}
+details ul{padding-left:20px;margin:8px 0}details li{margin:5px 0}
+.note{background:var(--warn);border:1px solid var(--warnline);border-radius:10px;padding:12px 16px;margin:14px 0;font-size:.97rem}
+.top{font-size:.9rem;margin:6px 0 0}
+.tbl{overflow-x:auto;margin:10px 0;border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:.93rem;background:var(--card)}
+th,td{padding:8px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--tint);color:var(--accent)}
+tr:last-child td{border-bottom:0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:640px){.two{grid-template-columns:1fr}body{font-size:16px}h1{font-size:1.6rem}}
+footer{padding:24px 0 60px;color:var(--muted);font-size:.9rem}
+</style></head><body id="top">
+<header><div class="wrap"><h1>General Surgery call guide</h1><p class="lede">A step-by-step guide for handling inbound General Surgery calls. Scroll down the chart, answer each question, and open a section when a purple box tells you to.</p>
+<div class="rules"><h2>Five rules for every call</h2><ol><li>Confirm who you are speaking with before you share anything. No match, no PHI.</li><li>Check for urgent items first.</li><li>Never schedule, cancel or reschedule a surgery yourself. Warm transfer, and send a TE if no one answers.</li><li>Never override the on-call schedule when you page.</li><li>Before you send a page or TE, check the spelling, the callback number and the GE number.</li></ol></div></div></header>
+<nav class="jump" aria-label="Jump to a section"><div class="wrap">
+<a href="#sec-main">Whole call</a><a href="#sec-urgent">2 Urgent</a><a href="#sec-hospital">3 Hospital</a><a href="#sec-visit">4 Office visits</a><a href="#sec-plastic">5 Plastic</a><a href="#sec-page">6 Send a page</a><a href="#sec-after">7 After a page</a><a href="#sec-ref">Reference</a></div></nav>
+<main><div class="wrap"><section id="sec-main"><h2>The whole call, start to finish</h2><p class="when">Start at the top and follow the arrows down. Answer each yes/no question in order. Purple boxes are links: tap one to open the detailed steps, then come back.</p><div class="chart" aria-label="Main call flow"><svg role="img"
+ viewBox="0.00 0.00 1021.14 2462.52" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(14.4 2448.12)">
+<title>G</title>
+<!-- start -->
+<g id="node1" class="node">
+<title>start</title>
+<ellipse fill="#12305b" stroke="#12305b" stroke-width="1.4" cx="209.84" cy="-2411.8" rx="79.39" ry="21.84"/>
+<text text-anchor="start" x="165.84" y="-2409.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00" fill="white">Call starts</text>
+</g>
+<!-- s1 -->
+<g id="node2" class="node">
+<title>s1</title>
+<path fill="#f2f8fd" stroke="#12305b" stroke-width="1.4" d="M345.34,-2360.88C345.34,-2360.88 74.34,-2360.88 74.34,-2360.88 68.34,-2360.88 62.34,-2354.88 62.34,-2348.88 62.34,-2348.88 62.34,-2283.88 62.34,-2283.88 62.34,-2277.88 68.34,-2271.88 74.34,-2271.88 74.34,-2271.88 345.34,-2271.88 345.34,-2271.88 351.34,-2271.88 357.34,-2277.88 357.34,-2283.88 357.34,-2283.88 357.34,-2348.88 357.34,-2348.88 357.34,-2354.88 351.34,-2360.88 345.34,-2360.88"/>
+<text text-anchor="start" x="74.34" y="-2342.88" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Step 1: Open the call</text>
+<text text-anchor="start" x="74.34" y="-2327.88" font-family="Helvetica,sans-Serif" font-size="15.00">Use the Duly greeting (pre&#45;screen</text>
+<text text-anchor="start" x="74.34" y="-2312.88" font-family="Helvetica,sans-Serif" font-size="15.00">opening if pre&#45;screened)</text>
+<text text-anchor="start" x="74.34" y="-2297.88" font-family="Helvetica,sans-Serif" font-size="15.00">Repeat the request and say you can</text>
+<text text-anchor="start" x="74.34" y="-2282.88" font-family="Helvetica,sans-Serif" font-size="15.00">help</text>
+</g>
+<!-- start&#45;&gt;s1 -->
+<g id="edge1" class="edge">
+<title>start&#45;&gt;s1</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M209.84,-2389.6C209.84,-2383.75 209.84,-2377.14 209.84,-2370.34"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="212.99,-2370.01 209.84,-2361.01 206.69,-2370.01 212.99,-2370.01"/>
+</g>
+<!-- s2 -->
+<g id="node3" class="node">
+<title>s2</title>
+<path fill="#f2f8fd" stroke="#12305b" stroke-width="1.4" d="M336.34,-2242.88C336.34,-2242.88 83.34,-2242.88 83.34,-2242.88 77.34,-2242.88 71.34,-2236.88 71.34,-2230.88 71.34,-2230.88 71.34,-2195.88 71.34,-2195.88 71.34,-2189.88 77.34,-2183.88 83.34,-2183.88 83.34,-2183.88 336.34,-2183.88 336.34,-2183.88 342.34,-2183.88 348.34,-2189.88 348.34,-2195.88 348.34,-2195.88 348.34,-2230.88 348.34,-2230.88 348.34,-2236.88 342.34,-2242.88 336.34,-2242.88"/>
+<text text-anchor="start" x="83.34" y="-2224.88" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Step 2: Confirm who is calling</text>
+<text text-anchor="start" x="83.34" y="-2209.88" font-family="Helvetica,sans-Serif" font-size="15.00">Ask for name and date of birth</text>
+<text text-anchor="start" x="83.34" y="-2194.88" font-family="Helvetica,sans-Serif" font-size="15.00">Match them to the chart in Epic</text>
+</g>
+<!-- s1&#45;&gt;s2 -->
+<g id="edge2" class="edge">
+<title>s1&#45;&gt;s2</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M209.84,-2271.67C209.84,-2265.15 209.84,-2258.47 209.84,-2252.09"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="212.99,-2252 209.84,-2243 206.69,-2252 212.99,-2252"/>
+</g>
+<!-- d_auth -->
+<g id="node4" class="node">
+<title>d_auth</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="409.92,-2106.71 309.88,-2155.05 109.8,-2155.05 9.76,-2106.71 109.8,-2058.36 309.88,-2058.36 409.92,-2106.71"/>
+<text text-anchor="start" x="99.34" y="-2118.21" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Does the caller match the</text>
+<text text-anchor="start" x="134.34" y="-2103.21" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">chart, or are they</text>
+<text text-anchor="start" x="159.34" y="-2088.21" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">authorized?</text>
+</g>
+<!-- s2&#45;&gt;d_auth -->
+<g id="edge3" class="edge">
+<title>s2&#45;&gt;d_auth</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M209.84,-2183.78C209.84,-2177.7 209.84,-2171.08 209.84,-2164.37"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="212.99,-2164.2 209.84,-2155.2 206.69,-2164.2 212.99,-2164.2"/>
+</g>
+<!-- x_auth -->
+<g id="node5" class="node">
+<title>x_auth</title>
+<path fill="#f5e8e8" stroke="#8e2f2f" stroke-width="1.4" d="M737.34,-2149.71C737.34,-2149.71 486.34,-2149.71 486.34,-2149.71 480.34,-2149.71 474.34,-2143.71 474.34,-2137.71 474.34,-2137.71 474.34,-2075.71 474.34,-2075.71 474.34,-2069.71 480.34,-2063.71 486.34,-2063.71 486.34,-2063.71 737.34,-2063.71 737.34,-2063.71 743.34,-2063.71 749.34,-2069.71 749.34,-2075.71 749.34,-2075.71 749.34,-2137.71 749.34,-2137.71 749.34,-2143.71 743.34,-2149.71 737.34,-2149.71"/>
+<text text-anchor="start" x="486.34" y="-2131.71" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Stop: you cannot help</text>
+<text text-anchor="start" x="486.34" y="-2116.71" font-family="Helvetica,sans-Serif" font-size="15.00">Share no PHI</text>
+<text text-anchor="start" x="486.34" y="-2101.71" font-family="Helvetica,sans-Serif" font-size="15.00">Speak only with the patient or an</text>
+<text text-anchor="start" x="486.34" y="-2086.71" font-family="Helvetica,sans-Serif" font-size="15.00">authorized person</text>
+<text text-anchor="start" x="486.34" y="-2074.11" font-family="Helvetica,sans-Serif" text-decoration="underline" font-size="12.00" fill="#1f5fa8">then go to Step 4</text>
+</g>
+<!-- d_auth&#45;&gt;x_auth -->
+<g id="edge4" class="edge">
+<title>d_auth&#45;&gt;x_auth</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M409.96,-2106.71C428.48,-2106.71 447.01,-2106.71 464.93,-2106.71"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="465.24,-2109.86 474.24,-2106.71 465.24,-2103.56 465.24,-2109.86"/>
+<text text-anchor="start" x="422.11" y="-2113.51" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- d_rep -->
+<g id="node6" class="node">
+<title>d_rep</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="419.52,-1965.03 314.68,-2013.38 105,-2013.38 0.16,-1965.03 105,-1916.69 314.68,-1916.69 419.52,-1965.03"/>
+<text text-anchor="start" x="105.84" y="-1976.53" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Has this patient called 2</text>
+<text text-anchor="start" x="93.34" y="-1961.53" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">or more times about a non&#45;</text>
+<text text-anchor="start" x="140.34" y="-1946.53" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">urgent concern?</text>
+</g>
+<!-- d_auth&#45;&gt;d_rep -->
+<g id="edge5" class="edge">
+<title>d_auth&#45;&gt;d_rep</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M209.84,-2058.42C209.84,-2046.81 209.84,-2034.28 209.84,-2022.3"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="212.99,-2022.27 209.84,-2013.27 206.69,-2022.27 212.99,-2022.27"/>
+<text text-anchor="start" x="209.84" y="-2033.33" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- r_add -->
+<g id="node7" class="node">
+<title>r_add</title>
+<path fill="#f2f8fd" stroke="#12305b" stroke-width="1.4" d="M783.84,-2015.53C783.84,-2015.53 501.84,-2015.53 501.84,-2015.53 495.84,-2015.53 489.84,-2009.53 489.84,-2003.53 489.84,-2003.53 489.84,-1926.53 489.84,-1926.53 489.84,-1920.53 495.84,-1914.53 501.84,-1914.53 501.84,-1914.53 783.84,-1914.53 783.84,-1914.53 789.84,-1914.53 795.84,-1920.53 795.84,-1926.53 795.84,-1926.53 795.84,-2003.53 795.84,-2003.53 795.84,-2009.53 789.84,-2015.53 783.84,-2015.53"/>
+<text text-anchor="start" x="501.84" y="-1997.53" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Add&#45;on step</text>
+<text text-anchor="start" x="501.84" y="-1982.53" font-family="Helvetica,sans-Serif" font-size="15.00">A Teams message may be sent to Mgr</text>
+<text text-anchor="start" x="501.84" y="-1967.53" font-family="Helvetica,sans-Serif" font-size="15.00">Mounes Aloriqat and Sup. Megan</text>
+<text text-anchor="start" x="501.84" y="-1952.53" font-family="Helvetica,sans-Serif" font-size="15.00">Guerrero: name, GE, DOB, callback</text>
+<text text-anchor="start" x="501.84" y="-1937.53" font-family="Helvetica,sans-Serif" font-size="15.00">#, short summary</text>
+<text text-anchor="start" x="501.84" y="-1924.93" font-family="Helvetica,sans-Serif" text-decoration="underline" font-size="12.00" fill="#1f5fa8">then keep handling the call</text>
+</g>
+<!-- d_rep&#45;&gt;r_add -->
+<g id="edge6" class="edge">
+<title>d_rep&#45;&gt;r_add</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M419.68,-1965.03C440.16,-1965.03 460.72,-1965.03 480.62,-1965.03"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="480.72,-1968.18 489.72,-1965.03 480.72,-1961.88 480.72,-1968.18"/>
+<text text-anchor="start" x="431.76" y="-1971.83" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- step3 -->
+<g id="step3" class="node">
+<title>step3</title>
+<path fill="#f2f8fd" stroke="#12305b" stroke-width="1.4" d="M563.34,-1871.53C563.34,-1871.53 288.34,-1871.53 288.34,-1871.53 282.34,-1871.53 276.34,-1865.53 276.34,-1859.53 276.34,-1859.53 276.34,-1809.53 276.34,-1809.53 276.34,-1803.53 282.34,-1797.53 288.34,-1797.53 288.34,-1797.53 563.34,-1797.53 563.34,-1797.53 569.34,-1797.53 575.34,-1803.53 575.34,-1809.53 575.34,-1809.53 575.34,-1859.53 575.34,-1859.53 575.34,-1865.53 569.34,-1871.53 563.34,-1871.53"/>
+<text text-anchor="start" x="288.34" y="-1853.53" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Step 3: Find out why they called</text>
+<text text-anchor="start" x="288.34" y="-1838.53" font-family="Helvetica,sans-Serif" font-size="15.00">Check the questions below in this</text>
+<text text-anchor="start" x="288.34" y="-1823.53" font-family="Helvetica,sans-Serif" font-size="15.00">order.</text>
+<text text-anchor="start" x="288.34" y="-1808.53" font-family="Helvetica,sans-Serif" font-size="15.00">Urgent items come first.</text>
+</g>
+<!-- d_rep&#45;&gt;step3 -->
+<g id="edge7" class="edge">
+<title>d_rep&#45;&gt;step3</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M289.35,-1916.73C311.63,-1903.47 335.66,-1889.18 357.25,-1876.34"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="358.96,-1878.98 365.09,-1871.67 355.74,-1873.57 358.96,-1878.98"/>
+<text text-anchor="start" x="337.84" y="-1889.33" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- r_add&#45;&gt;step3 -->
+<g id="edge8" class="edge">
+<title>r_add&#45;&gt;step3</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M558.94,-1914.35C537.67,-1901.76 515.07,-1888.37 494.65,-1876.28"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="495.99,-1873.41 486.64,-1871.54 492.78,-1878.83 495.99,-1873.41"/>
+</g>
+<!-- d_h -->
+<g id="node9" class="node">
+<title>d_h</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="605.6,-1720.36 515.72,-1768.71 335.96,-1768.71 246.08,-1720.36 335.96,-1672.01 515.72,-1672.01 605.6,-1720.36"/>
+<text text-anchor="start" x="327.84" y="-1731.86" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Is the caller a hospital,</text>
+<text text-anchor="start" x="335.34" y="-1716.86" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">provider or physician</text>
+<text text-anchor="start" x="397.84" y="-1701.86" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">office?</text>
+</g>
+<!-- step3&#45;&gt;d_h -->
+<g id="edge9" class="edge">
+<title>step3&#45;&gt;d_h</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M425.84,-1797.42C425.84,-1791.17 425.84,-1784.54 425.84,-1777.89"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="428.99,-1777.87 425.84,-1768.87 422.69,-1777.87 428.99,-1777.87"/>
+</g>
+<!-- l_h -->
+<g id="jump__sec&#45;hospital__l_h" class="node">
+<title>l_h</title>
+<path fill="#ece9fa" stroke="#5a49b0" stroke-width="1.8" d="M889.34,-1742.36C889.34,-1742.36 688.34,-1742.36 688.34,-1742.36 682.34,-1742.36 676.34,-1736.36 676.34,-1730.36 676.34,-1730.36 676.34,-1710.36 676.34,-1710.36 676.34,-1704.36 682.34,-1698.36 688.34,-1698.36 688.34,-1698.36 889.34,-1698.36 889.34,-1698.36 895.34,-1698.36 901.34,-1704.36 901.34,-1710.36 901.34,-1710.36 901.34,-1730.36 901.34,-1730.36 901.34,-1736.36 895.34,-1742.36 889.34,-1742.36"/>
+<text text-anchor="start" x="688.34" y="-1724.36" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Go to Section 3</text>
+<text text-anchor="start" x="688.34" y="-1709.36" font-family="Helvetica,sans-Serif" font-size="15.00">Hospital and provider calls</text>
+</g>
+<!-- d_h&#45;&gt;l_h -->
+<g id="edge10" class="edge">
+<title>d_h&#45;&gt;l_h</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M605.48,-1720.36C626.37,-1720.36 647.29,-1720.36 667.14,-1720.36"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="667.18,-1723.51 676.18,-1720.36 667.18,-1717.21 667.18,-1723.51"/>
+<text text-anchor="start" x="617.9" y="-1727.16" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- d_u -->
+<g id="node11" class="node">
+<title>d_u</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="651.05,-1568.77 538.44,-1629.11 313.24,-1629.11 200.63,-1568.77 313.24,-1508.42 538.44,-1508.42 651.05,-1568.77"/>
+<text text-anchor="start" x="299.84" y="-1587.77" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Hotword or urgent symptom?</text>
+<text text-anchor="start" x="320.34" y="-1572.77" font-family="Helvetica,sans-Serif" font-size="15.00">Bleeding, vomiting, nausea,</text>
+<text text-anchor="start" x="328.84" y="-1557.77" font-family="Helvetica,sans-Serif" font-size="15.00">fever, severe pain, wound</text>
+<text text-anchor="start" x="395.34" y="-1542.77" font-family="Helvetica,sans-Serif" font-size="15.00">concern</text>
+</g>
+<!-- d_h&#45;&gt;d_u -->
+<g id="edge11" class="edge">
+<title>d_h&#45;&gt;d_u</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M425.84,-1672.03C425.84,-1661.29 425.84,-1649.67 425.84,-1638.25"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="428.99,-1638.16 425.84,-1629.16 422.69,-1638.16 428.99,-1638.16"/>
+<text text-anchor="start" x="425.84" y="-1646.99" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- l_u -->
+<g id="jump__sec&#45;urgent__l_u" class="node">
+<title>l_u</title>
+<path fill="#ece9fa" stroke="#5a49b0" stroke-width="1.8" d="M914.34,-1590.77C914.34,-1590.77 733.34,-1590.77 733.34,-1590.77 727.34,-1590.77 721.34,-1584.77 721.34,-1578.77 721.34,-1578.77 721.34,-1558.77 721.34,-1558.77 721.34,-1552.77 727.34,-1546.77 733.34,-1546.77 733.34,-1546.77 914.34,-1546.77 914.34,-1546.77 920.34,-1546.77 926.34,-1552.77 926.34,-1558.77 926.34,-1558.77 926.34,-1578.77 926.34,-1578.77 926.34,-1584.77 920.34,-1590.77 914.34,-1590.77"/>
+<text text-anchor="start" x="733.34" y="-1572.77" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Go to Section 2</text>
+<text text-anchor="start" x="733.34" y="-1557.77" font-family="Helvetica,sans-Serif" font-size="15.00">Urgent calls and paging</text>
+</g>
+<!-- d_u&#45;&gt;l_u -->
+<g id="edge12" class="edge">
+<title>d_u&#45;&gt;l_u</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M651.3,-1568.77C672.22,-1568.77 692.75,-1568.77 711.94,-1568.77"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="711.95,-1571.92 720.95,-1568.77 711.95,-1565.62 711.95,-1571.92"/>
+<text text-anchor="start" x="663.27" y="-1575.57" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- d_s -->
+<g id="node13" class="node">
+<title>d_s</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="625.92,-1331.44 525.88,-1465.25 325.8,-1465.25 225.76,-1331.44 325.8,-1197.63 525.88,-1197.63 625.92,-1331.44"/>
+<text text-anchor="start" x="349.84" y="-1395.44" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Is the call about a</text>
+<text text-anchor="start" x="388.34" y="-1380.44" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">surgery?</text>
+<text text-anchor="start" x="327.34" y="-1365.44" font-family="Helvetica,sans-Serif" font-size="15.00">Surgery in the next 24–48</text>
+<text text-anchor="start" x="404.34" y="-1350.44" font-family="Helvetica,sans-Serif" font-size="15.00">hours</text>
+<text text-anchor="start" x="318.84" y="-1335.44" font-family="Helvetica,sans-Serif" font-size="15.00">Call 3–5 days before surgery</text>
+<text text-anchor="start" x="351.84" y="-1320.44" font-family="Helvetica,sans-Serif" font-size="15.00">Schedule, cancel or</text>
+<text text-anchor="start" x="384.34" y="-1305.44" font-family="Helvetica,sans-Serif" font-size="15.00">reschedule</text>
+<text text-anchor="start" x="345.34" y="-1290.44" font-family="Helvetica,sans-Serif" font-size="15.00">Any surgery question</text>
+<text text-anchor="start" x="315.34" y="-1275.44" font-family="Helvetica,sans-Serif" font-size="15.00">Repeat caller who needs help</text>
+<text text-anchor="start" x="410.34" y="-1260.44" font-family="Helvetica,sans-Serif" font-size="15.00">now</text>
+</g>
+<!-- d_u&#45;&gt;d_s -->
+<g id="edge13" class="edge">
+<title>d_u&#45;&gt;d_s</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M425.84,-1508.38C425.84,-1497.75 425.84,-1486.27 425.84,-1474.44"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="428.99,-1474.34 425.84,-1465.34 422.69,-1474.34 428.99,-1474.34"/>
+<text text-anchor="start" x="425.84" y="-1483.14" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- o_s -->
+<g id="node14" class="node">
+<title>o_s</title>
+<path fill="#e7f5e9" stroke="#3c8d45" stroke-width="1.4" d="M979.34,-1396.94C979.34,-1396.94 708.34,-1396.94 708.34,-1396.94 702.34,-1396.94 696.34,-1390.94 696.34,-1384.94 696.34,-1384.94 696.34,-1277.94 696.34,-1277.94 696.34,-1271.94 702.34,-1265.94 708.34,-1265.94 708.34,-1265.94 979.34,-1265.94 979.34,-1265.94 985.34,-1265.94 991.34,-1271.94 991.34,-1277.94 991.34,-1277.94 991.34,-1384.94 991.34,-1384.94 991.34,-1390.94 985.34,-1396.94 979.34,-1396.94"/>
+<text text-anchor="start" x="708.34" y="-1378.94" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Warm transfer to the patient&#39;s</text>
+<text text-anchor="start" x="708.34" y="-1363.94" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Surgery Scheduler</text>
+<text text-anchor="start" x="708.34" y="-1348.94" font-family="Helvetica,sans-Serif" font-size="15.00">No answer: TE to Surgery Scheduler</text>
+<text text-anchor="start" x="708.34" y="-1333.94" font-family="Helvetica,sans-Serif" font-size="15.00">Pool P 12172 (High Priority if</text>
+<text text-anchor="start" x="708.34" y="-1318.94" font-family="Helvetica,sans-Serif" font-size="15.00">cancelling or within 3–5 days).</text>
+<text text-anchor="start" x="708.34" y="-1303.94" font-family="Helvetica,sans-Serif" font-size="15.00">Never schedule, cancel or</text>
+<text text-anchor="start" x="708.34" y="-1288.94" font-family="Helvetica,sans-Serif" font-size="15.00">reschedule a surgery yourself.</text>
+<text text-anchor="start" x="708.34" y="-1276.34" font-family="Helvetica,sans-Serif" text-decoration="underline" font-size="12.00" fill="#1f5fa8">then go to Step 4</text>
+</g>
+<!-- d_s&#45;&gt;o_s -->
+<g id="edge14" class="edge">
+<title>d_s&#45;&gt;o_s</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M625.96,-1331.44C646.51,-1331.44 667.18,-1331.44 687.16,-1331.44"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="687.29,-1334.59 696.29,-1331.44 687.29,-1328.29 687.29,-1334.59"/>
+<text text-anchor="start" x="638.11" y="-1338.24" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- d_v -->
+<g id="node15" class="node">
+<title>d_v</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="621.76,-1094.11 523.8,-1154.45 327.88,-1154.45 229.92,-1094.11 327.88,-1033.77 523.8,-1033.77 621.76,-1094.11"/>
+<text text-anchor="start" x="317.84" y="-1113.11" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Does the patient want an</text>
+<text text-anchor="start" x="376.84" y="-1098.11" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">office visit?</text>
+<text text-anchor="start" x="335.34" y="-1083.11" font-family="Helvetica,sans-Serif" font-size="15.00">New, follow&#45;up, post&#45;op,</text>
+<text text-anchor="start" x="328.34" y="-1068.11" font-family="Helvetica,sans-Serif" font-size="15.00">consult, or plastic surgery</text>
+</g>
+<!-- d_s&#45;&gt;d_v -->
+<g id="edge15" class="edge">
+<title>d_s&#45;&gt;d_v</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M425.84,-1197.3C425.84,-1185.8 425.84,-1174.5 425.84,-1163.85"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="428.99,-1163.67 425.84,-1154.67 422.69,-1163.67 428.99,-1163.67"/>
+<text text-anchor="start" x="425.84" y="-1172.33" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- l_v -->
+<g id="jump__sec&#45;visit__l_v" class="node">
+<title>l_v</title>
+<path fill="#ece9fa" stroke="#5a49b0" stroke-width="1.8" d="M929.84,-1123.61C929.84,-1123.61 703.84,-1123.61 703.84,-1123.61 697.84,-1123.61 691.84,-1117.61 691.84,-1111.61 691.84,-1111.61 691.84,-1076.61 691.84,-1076.61 691.84,-1070.61 697.84,-1064.61 703.84,-1064.61 703.84,-1064.61 929.84,-1064.61 929.84,-1064.61 935.84,-1064.61 941.84,-1070.61 941.84,-1076.61 941.84,-1076.61 941.84,-1111.61 941.84,-1111.61 941.84,-1117.61 935.84,-1123.61 929.84,-1123.61"/>
+<text text-anchor="start" x="703.84" y="-1105.61" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Go to Section 4</text>
+<text text-anchor="start" x="703.84" y="-1090.61" font-family="Helvetica,sans-Serif" font-size="15.00">Office visits (plastic surgery is</text>
+<text text-anchor="start" x="703.84" y="-1075.61" font-family="Helvetica,sans-Serif" font-size="15.00">Section 5)</text>
+</g>
+<!-- d_v&#45;&gt;l_v -->
+<g id="edge16" class="edge">
+<title>d_v&#45;&gt;l_v</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M621.91,-1094.11C642.39,-1094.11 662.86,-1094.11 682.43,-1094.11"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="682.65,-1097.26 691.65,-1094.11 682.65,-1090.96 682.65,-1097.26"/>
+<text text-anchor="start" x="633.82" y="-1100.91" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- d_r -->
+<g id="node17" class="node">
+<title>d_r</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="626.56,-902.69 526.2,-951.04 325.48,-951.04 225.12,-902.69 325.48,-854.35 526.2,-854.35 626.56,-902.69"/>
+<text text-anchor="start" x="335.34" y="-914.19" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Sooner appointment,</text>
+<text text-anchor="start" x="352.84" y="-899.19" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">provider location</text>
+<text text-anchor="start" x="314.84" y="-884.19" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">question, or running late?</text>
+</g>
+<!-- d_v&#45;&gt;d_r -->
+<g id="edge17" class="edge">
+<title>d_v&#45;&gt;d_r</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M425.84,-1033.7C425.84,-1010.14 425.84,-983.17 425.84,-959.93"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="428.99,-959.89 425.84,-950.89 422.69,-959.89 428.99,-959.89"/>
+<text text-anchor="start" x="425.84" y="-1008.49" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- o_r -->
+<g id="node18" class="node">
+<title>o_r</title>
+<path fill="#e7f5e9" stroke="#3c8d45" stroke-width="1.4" d="M980.34,-990.69C980.34,-990.69 709.34,-990.69 709.34,-990.69 703.34,-990.69 697.34,-984.69 697.34,-978.69 697.34,-978.69 697.34,-826.69 697.34,-826.69 697.34,-820.69 703.34,-814.69 709.34,-814.69 709.34,-814.69 980.34,-814.69 980.34,-814.69 986.34,-814.69 992.34,-820.69 992.34,-826.69 992.34,-826.69 992.34,-978.69 992.34,-978.69 992.34,-984.69 986.34,-990.69 980.34,-990.69"/>
+<text text-anchor="start" x="709.34" y="-972.69" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Sooner appointment or location</text>
+<text text-anchor="start" x="709.34" y="-957.69" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">question</text>
+<text text-anchor="start" x="709.34" y="-942.69" font-family="Helvetica,sans-Serif" font-size="15.00">Book the next available (sooner</text>
+<text text-anchor="start" x="709.34" y="-927.69" font-family="Helvetica,sans-Serif" font-size="15.00">appt), then send a TE to Reception</text>
+<text text-anchor="start" x="709.34" y="-912.69" font-family="Helvetica,sans-Serif" font-size="15.00">Pool P 12179 with the request.</text>
+<text text-anchor="start" x="709.34" y="-897.69" font-family="Helvetica,sans-Serif" font-size="15.00">Running late: call Reception ext.</text>
+<text text-anchor="start" x="709.34" y="-882.69" font-family="Helvetica,sans-Serif" font-size="15.00">&quot;XFER D Surgery General General&quot;</text>
+<text text-anchor="start" x="709.34" y="-867.69" font-family="Helvetica,sans-Serif" font-size="15.00">with the ETA. 15&#45;minute grace</text>
+<text text-anchor="start" x="709.34" y="-852.69" font-family="Helvetica,sans-Serif" font-size="15.00">period. Do not put it in</text>
+<text text-anchor="start" x="709.34" y="-837.69" font-family="Helvetica,sans-Serif" font-size="15.00">appointment notes.</text>
+<text text-anchor="start" x="709.34" y="-825.09" font-family="Helvetica,sans-Serif" text-decoration="underline" font-size="12.00" fill="#1f5fa8">then go to Step 4</text>
+</g>
+<!-- d_r&#45;&gt;o_r -->
+<g id="edge18" class="edge">
+<title>d_r&#45;&gt;o_r</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M626.75,-902.69C647.33,-902.69 668.02,-902.69 688.03,-902.69"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="688.17,-905.84 697.17,-902.69 688.17,-899.54 688.17,-905.84"/>
+<text text-anchor="start" x="639.02" y="-909.49" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- d_k -->
+<g id="node19" class="node">
+<title>d_k</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="612.16,-721.19 519,-769.54 332.68,-769.54 239.52,-721.19 332.68,-672.85 519,-672.85 612.16,-721.19"/>
+<text text-anchor="start" x="337.84" y="-732.69" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Non&#45;urgent sick call,</text>
+<text text-anchor="start" x="323.84" y="-717.69" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">medication question, or</text>
+<text text-anchor="start" x="361.84" y="-702.69" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">wants a nurse?</text>
+</g>
+<!-- d_r&#45;&gt;d_k -->
+<g id="edge19" class="edge">
+<title>d_r&#45;&gt;d_k</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M425.84,-854.06C425.84,-830.85 425.84,-802.78 425.84,-778.52"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="428.99,-778.42 425.84,-769.42 422.69,-778.42 428.99,-778.42"/>
+<text text-anchor="start" x="425.84" y="-789.49" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- o_k -->
+<g id="node20" class="node">
+<title>o_k</title>
+<path fill="#e7f5e9" stroke="#3c8d45" stroke-width="1.4" d="M943.34,-771.69C943.34,-771.69 694.34,-771.69 694.34,-771.69 688.34,-771.69 682.34,-765.69 682.34,-759.69 682.34,-759.69 682.34,-682.69 682.34,-682.69 682.34,-676.69 688.34,-670.69 694.34,-670.69 694.34,-670.69 943.34,-670.69 943.34,-670.69 949.34,-670.69 955.34,-676.69 955.34,-682.69 955.34,-682.69 955.34,-759.69 955.34,-759.69 955.34,-765.69 949.34,-771.69 943.34,-771.69"/>
+<text text-anchor="start" x="694.34" y="-753.69" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Send a TE only</text>
+<text text-anchor="start" x="694.34" y="-738.69" font-family="Helvetica,sans-Serif" font-size="15.00">Do not call the office</text>
+<text text-anchor="start" x="694.34" y="-723.69" font-family="Helvetica,sans-Serif" font-size="15.00">MA pool for the surgeon&#39;s region:</text>
+<text text-anchor="start" x="694.34" y="-708.69" font-family="Helvetica,sans-Serif" font-size="15.00">West P 12149 or South P 12169</text>
+<text text-anchor="start" x="694.34" y="-693.69" font-family="Helvetica,sans-Serif" font-size="15.00">Mark High Priority</text>
+<text text-anchor="start" x="694.34" y="-681.09" font-family="Helvetica,sans-Serif" text-decoration="underline" font-size="12.00" fill="#1f5fa8">then go to Step 4</text>
+</g>
+<!-- d_k&#45;&gt;o_k -->
+<g id="edge20" class="edge">
+<title>d_k&#45;&gt;o_k</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M612.27,-721.19C632.72,-721.19 653.33,-721.19 673.18,-721.19"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="673.25,-724.34 682.25,-721.19 673.25,-718.04 673.25,-724.34"/>
+<text text-anchor="start" x="624.17" y="-727.99" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- x_o -->
+<g id="node21" class="node">
+<title>x_o</title>
+<path fill="#f2f8fd" stroke="#12305b" stroke-width="1.4" d="M550.34,-627.69C550.34,-627.69 301.34,-627.69 301.34,-627.69 295.34,-627.69 289.34,-621.69 289.34,-615.69 289.34,-615.69 289.34,-523.69 289.34,-523.69 289.34,-517.69 295.34,-511.69 301.34,-511.69 301.34,-511.69 550.34,-511.69 550.34,-511.69 556.34,-511.69 562.34,-517.69 562.34,-523.69 562.34,-523.69 562.34,-615.69 562.34,-615.69 562.34,-621.69 556.34,-627.69 550.34,-627.69"/>
+<text text-anchor="start" x="301.34" y="-609.69" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">None of these?</text>
+<text text-anchor="start" x="301.34" y="-594.69" font-family="Helvetica,sans-Serif" font-size="15.00">Ask more questions</text>
+<text text-anchor="start" x="301.34" y="-579.69" font-family="Helvetica,sans-Serif" font-size="15.00">Follow SOP and the Epic decision</text>
+<text text-anchor="start" x="301.34" y="-564.69" font-family="Helvetica,sans-Serif" font-size="15.00">trees</text>
+<text text-anchor="start" x="301.34" y="-549.69" font-family="Helvetica,sans-Serif" font-size="15.00">Never guess; try to de&#45;escalate</text>
+<text text-anchor="start" x="301.34" y="-534.69" font-family="Helvetica,sans-Serif" font-size="15.00">before any supervisor escalation</text>
+<text text-anchor="start" x="301.34" y="-522.09" font-family="Helvetica,sans-Serif" text-decoration="underline" font-size="12.00" fill="#1f5fa8">then go to Step 4</text>
+</g>
+<!-- d_k&#45;&gt;x_o -->
+<g id="edge21" class="edge">
+<title>d_k&#45;&gt;x_o</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M425.84,-672.89C425.84,-661.51 425.84,-649.14 425.84,-637.06"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="428.99,-636.91 425.84,-627.91 422.69,-636.91 428.99,-636.91"/>
+<text text-anchor="start" x="425.84" y="-645.49" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- step4 -->
+<g id="step4" class="node">
+<title>step4</title>
+<path fill="#f2f8fd" stroke="#12305b" stroke-width="1.4" d="M556.84,-482.69C556.84,-482.69 294.84,-482.69 294.84,-482.69 288.84,-482.69 282.84,-476.69 282.84,-470.69 282.84,-470.69 282.84,-375.69 282.84,-375.69 282.84,-369.69 288.84,-363.69 294.84,-363.69 294.84,-363.69 556.84,-363.69 556.84,-363.69 562.84,-363.69 568.84,-369.69 568.84,-375.69 568.84,-375.69 568.84,-470.69 568.84,-470.69 568.84,-476.69 562.84,-482.69 556.84,-482.69"/>
+<text text-anchor="start" x="294.84" y="-464.69" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Step 4: Recap</text>
+<text text-anchor="start" x="294.84" y="-449.69" font-family="Helvetica,sans-Serif" font-size="15.00">Reason for the call and what you</text>
+<text text-anchor="start" x="294.84" y="-434.69" font-family="Helvetica,sans-Serif" font-size="15.00">did</text>
+<text text-anchor="start" x="294.84" y="-419.69" font-family="Helvetica,sans-Serif" font-size="15.00">Appointments, reminders and next</text>
+<text text-anchor="start" x="294.84" y="-404.69" font-family="Helvetica,sans-Serif" font-size="15.00">steps</text>
+<text text-anchor="start" x="294.84" y="-389.69" font-family="Helvetica,sans-Serif" font-size="15.00">Co&#45;pay, balance and cancellation</text>
+<text text-anchor="start" x="294.84" y="-374.69" font-family="Helvetica,sans-Serif" font-size="15.00">policy if it applies</text>
+</g>
+<!-- x_o&#45;&gt;step4 -->
+<g id="edge22" class="edge">
+<title>x_o&#45;&gt;step4</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M425.84,-511.58C425.84,-505.22 425.84,-498.7 425.84,-492.22"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="428.99,-491.78 425.84,-482.78 422.69,-491.78 428.99,-491.78"/>
+</g>
+<!-- d_more -->
+<g id="node23" class="node">
+<title>d_more</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="611.03,-298.77 518.43,-334.62 333.24,-334.62 240.65,-298.77 333.24,-262.91 518.43,-262.91 611.03,-298.77"/>
+<text text-anchor="start" x="324.34" y="-302.77" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Anything else the caller</text>
+<text text-anchor="start" x="395.34" y="-287.77" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">needs?</text>
+</g>
+<!-- step4&#45;&gt;d_more -->
+<g id="edge23" class="edge">
+<title>step4&#45;&gt;d_more</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M425.84,-363.49C425.84,-356.89 425.84,-350.26 425.84,-343.89"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="428.99,-343.79 425.84,-334.79 422.69,-343.79 428.99,-343.79"/>
+</g>
+<!-- close -->
+<g id="node24" class="node">
+<title>close</title>
+<path fill="#f2f8fd" stroke="#12305b" stroke-width="1.4" d="M543.34,-219.84C543.34,-219.84 308.34,-219.84 308.34,-219.84 302.34,-219.84 296.34,-213.84 296.34,-207.84 296.34,-207.84 296.34,-172.84 296.34,-172.84 296.34,-166.84 302.34,-160.84 308.34,-160.84 308.34,-160.84 543.34,-160.84 543.34,-160.84 549.34,-160.84 555.34,-166.84 555.34,-172.84 555.34,-172.84 555.34,-207.84 555.34,-207.84 555.34,-213.84 549.34,-219.84 543.34,-219.84"/>
+<text text-anchor="start" x="308.34" y="-201.84" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Step 5: Close the call</text>
+<text text-anchor="start" x="308.34" y="-186.84" font-family="Helvetica,sans-Serif" font-size="15.00">Say the PSAT survey statement</text>
+<text text-anchor="start" x="308.34" y="-171.84" font-family="Helvetica,sans-Serif" font-size="15.00">Say the Duly thank&#45;you closing</text>
+</g>
+<!-- d_more&#45;&gt;close -->
+<g id="edge24" class="edge">
+<title>d_more&#45;&gt;close</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M425.84,-262.62C425.84,-251.95 425.84,-240.17 425.84,-229.31"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="428.99,-229.06 425.84,-220.06 422.69,-229.06 428.99,-229.06"/>
+<text text-anchor="start" x="425.84" y="-237.64" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- x_more -->
+<g id="node27" class="node">
+<title>x_more</title>
+<path fill="#f2f8fd" stroke="#12305b" stroke-width="1.4" d="M947.84,-328.27C947.84,-328.27 693.84,-328.27 693.84,-328.27 687.84,-328.27 681.84,-322.27 681.84,-316.27 681.84,-316.27 681.84,-281.27 681.84,-281.27 681.84,-275.27 687.84,-269.27 693.84,-269.27 693.84,-269.27 947.84,-269.27 947.84,-269.27 953.84,-269.27 959.84,-275.27 959.84,-281.27 959.84,-281.27 959.84,-316.27 959.84,-316.27 959.84,-322.27 953.84,-328.27 947.84,-328.27"/>
+<text text-anchor="start" x="693.84" y="-310.27" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Handle the new request</text>
+<text text-anchor="start" x="693.84" y="-295.27" font-family="Helvetica,sans-Serif" font-size="15.00">Go back to Step 3 and answer the</text>
+<text text-anchor="start" x="693.84" y="-280.27" font-family="Helvetica,sans-Serif" font-size="15.00">questions again</text>
+</g>
+<!-- d_more&#45;&gt;x_more -->
+<g id="edge27" class="edge">
+<title>d_more&#45;&gt;x_more</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M611.2,-298.77C631.79,-298.77 652.57,-298.77 672.62,-298.77"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="672.78,-301.92 681.78,-298.77 672.78,-295.62 672.78,-301.92"/>
+<text text-anchor="start" x="623.51" y="-305.57" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- disp -->
+<g id="node25" class="node">
+<title>disp</title>
+<path fill="#f2f8fd" stroke="#12305b" stroke-width="1.4" d="M549.84,-131.84C549.84,-131.84 301.84,-131.84 301.84,-131.84 295.84,-131.84 289.84,-125.84 289.84,-119.84 289.84,-119.84 289.84,-84.84 289.84,-84.84 289.84,-78.84 295.84,-72.84 301.84,-72.84 301.84,-72.84 549.84,-72.84 549.84,-72.84 555.84,-72.84 561.84,-78.84 561.84,-84.84 561.84,-84.84 561.84,-119.84 561.84,-119.84 561.84,-125.84 555.84,-131.84 549.84,-131.84"/>
+<text text-anchor="start" x="301.84" y="-113.84" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Step 6: Finish up</text>
+<text text-anchor="start" x="301.84" y="-98.84" font-family="Helvetica,sans-Serif" font-size="15.00">Choose the correct disposition</text>
+<text text-anchor="start" x="301.84" y="-83.84" font-family="Helvetica,sans-Serif" font-size="15.00">Complete, accurate notes in Epic</text>
+</g>
+<!-- close&#45;&gt;disp -->
+<g id="edge25" class="edge">
+<title>close&#45;&gt;disp</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M425.84,-160.7C425.84,-154.47 425.84,-147.77 425.84,-141.24"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="428.99,-140.85 425.84,-131.85 422.69,-140.85 428.99,-140.85"/>
+</g>
+<!-- end -->
+<g id="node26" class="node">
+<title>end</title>
+<ellipse fill="#12305b" stroke="#12305b" stroke-width="1.4" cx="425.84" cy="-21.92" rx="72.25" ry="21.84"/>
+<text text-anchor="start" x="386.84" y="-19.42" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00" fill="white">Call ends</text>
+</g>
+<!-- disp&#45;&gt;end -->
+<g id="edge26" class="edge">
+<title>disp&#45;&gt;end</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M425.84,-72.59C425.84,-66.24 425.84,-59.5 425.84,-53.1"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="428.99,-53.06 425.84,-44.06 422.69,-53.06 428.99,-53.06"/>
+</g>
+</g>
+</svg>
+</div><div class="key"><span><i style="background:#FFF3D1;border-color:#C58B1B"></i>Decision: answer yes or no</span><span><i style="background:#F2F8FD;border-color:#12305B"></i>Do this</span><span><i style="background:#E7F5E9;border-color:#3C8D45"></i>Hand-off</span><span><i style="background:#FDE9E6;border-color:#C0392B"></i>Urgent</span><span><i style="background:#F5E8E8;border-color:#8E2F2F"></i>Stop</span><span><i style="background:#ECE9FA;border-color:#5A49B0"></i>Tap to jump</span></div><details><summary>More detail on the surgery question</summary><div class="in"><ul>
+ <li>Warm transfer first. Use the scheduler extension for the patient's surgeon (see the Reference section).</li>
+ <li>Cancelling a surgery, or a call within 3–5 days of surgery: mark the TE <b>High Priority</b> if no one answers.</li>
+ <li>Never schedule, cancel or reschedule a surgery or procedure yourself. If the patient asks to speak with a nurse, send a TE only; do not call the office.</li></ul></div></details><p class="top"><a href="#top">Back to the top</a></p></section><section id="sec-urgent"><h2>Section 2: Urgent calls and paging</h2><p class="when">Use this when the patient reports bleeding, vomiting, nausea, fever, severe pain or a wound concern, or when a page may be needed.</p><div class="chart" aria-label="Urgent call flow for established patients"><svg role="img"
+ viewBox="0.00 0.00 821.14 1073.32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(14.4 1058.92)">
+<title>G</title>
+<!-- u0 -->
+<g id="node1" class="node">
+<title>u0</title>
+<path fill="#f2f8fd" stroke="#12305b" stroke-width="1.4" d="M338.84,-1044.52C338.84,-1044.52 80.84,-1044.52 80.84,-1044.52 74.84,-1044.52 68.84,-1038.52 68.84,-1032.52 68.84,-1032.52 68.84,-997.52 68.84,-997.52 68.84,-991.52 74.84,-985.52 80.84,-985.52 80.84,-985.52 338.84,-985.52 338.84,-985.52 344.84,-985.52 350.84,-991.52 350.84,-997.52 350.84,-997.52 350.84,-1032.52 350.84,-1032.52 350.84,-1038.52 344.84,-1044.52 338.84,-1044.52"/>
+<text text-anchor="start" x="80.84" y="-1026.52" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Hotword or urgent symptom</text>
+<text text-anchor="start" x="80.84" y="-1011.52" font-family="Helvetica,sans-Serif" font-size="15.00">Bleeding, vomiting, nausea, fever,</text>
+<text text-anchor="start" x="80.84" y="-996.52" font-family="Helvetica,sans-Serif" font-size="15.00">severe pain, wound concern</text>
+</g>
+<!-- d_inp -->
+<g id="node2" class="node">
+<title>d_inp</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="368.14,-908.35 288.99,-956.7 130.69,-956.7 51.54,-908.35 130.69,-860 288.99,-860 368.14,-908.35"/>
+<text text-anchor="start" x="124.84" y="-919.85" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Is the patient in the</text>
+<text text-anchor="start" x="127.84" y="-904.85" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">hospital right now?</text>
+<text text-anchor="start" x="169.34" y="-889.85" font-family="Helvetica,sans-Serif" font-size="15.00">(inpatient)</text>
+</g>
+<!-- u0&#45;&gt;d_inp -->
+<g id="edge1" class="edge">
+<title>u0&#45;&gt;d_inp</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M209.84,-985.42C209.84,-979.35 209.84,-972.73 209.84,-966.02"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="212.99,-965.84 209.84,-956.84 206.69,-965.84 212.99,-965.84"/>
+</g>
+<!-- x_inp -->
+<g id="node3" class="node">
+<title>x_inp</title>
+<path fill="#f5e8e8" stroke="#8e2f2f" stroke-width="1.4" d="M667.34,-937.85C667.34,-937.85 450.34,-937.85 450.34,-937.85 444.34,-937.85 438.34,-931.85 438.34,-925.85 438.34,-925.85 438.34,-890.85 438.34,-890.85 438.34,-884.85 444.34,-878.85 450.34,-878.85 450.34,-878.85 667.34,-878.85 667.34,-878.85 673.34,-878.85 679.34,-884.85 679.34,-890.85 679.34,-890.85 679.34,-925.85 679.34,-925.85 679.34,-931.85 673.34,-937.85 667.34,-937.85"/>
+<text text-anchor="start" x="450.34" y="-919.85" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">You cannot page a doctor</text>
+<text text-anchor="start" x="450.34" y="-904.85" font-family="Helvetica,sans-Serif" font-size="15.00">Tell the caller to speak with</text>
+<text text-anchor="start" x="450.34" y="-889.85" font-family="Helvetica,sans-Serif" font-size="15.00">hospital staff to start a page</text>
+</g>
+<!-- d_inp&#45;&gt;x_inp -->
+<g id="edge2" class="edge">
+<title>d_inp&#45;&gt;x_inp</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M368.26,-908.35C388.65,-908.35 409.34,-908.35 429.2,-908.35"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="429.26,-911.5 438.26,-908.35 429.26,-905.2 429.26,-911.5"/>
+<text text-anchor="start" x="380.29" y="-915.15" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- d_est -->
+<g id="node4" class="node">
+<title>d_est</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="419.52,-781.25 314.68,-817.1 105,-817.1 0.16,-781.25 105,-745.4 314.68,-745.4 419.52,-781.25"/>
+<text text-anchor="start" x="93.34" y="-785.25" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Has a Duly surgeon already</text>
+<text text-anchor="start" x="132.84" y="-770.25" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">seen this patient?</text>
+</g>
+<!-- d_inp&#45;&gt;d_est -->
+<g id="edge3" class="edge">
+<title>d_inp&#45;&gt;d_est</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M209.84,-860.06C209.84,-849.03 209.84,-837.34 209.84,-826.45"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="212.99,-826.13 209.84,-817.13 206.69,-826.13 212.99,-826.13"/>
+<text text-anchor="start" x="209.84" y="-834.98" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- l_new -->
+<g id="jump__new&#45;patient__l_new" class="node">
+<title>l_new</title>
+<path fill="#ece9fa" stroke="#5a49b0" stroke-width="1.8" d="M749.84,-803.25C749.84,-803.25 495.84,-803.25 495.84,-803.25 489.84,-803.25 483.84,-797.25 483.84,-791.25 483.84,-791.25 483.84,-771.25 483.84,-771.25 483.84,-765.25 489.84,-759.25 495.84,-759.25 495.84,-759.25 749.84,-759.25 749.84,-759.25 755.84,-759.25 761.84,-765.25 761.84,-771.25 761.84,-771.25 761.84,-791.25 761.84,-791.25 761.84,-797.25 755.84,-803.25 749.84,-803.25"/>
+<text text-anchor="start" x="495.84" y="-785.25" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">New patient</text>
+<text text-anchor="start" x="495.84" y="-770.25" font-family="Helvetica,sans-Serif" font-size="15.00">Go to the new&#45;patient rules below</text>
+</g>
+<!-- d_est&#45;&gt;l_new -->
+<g id="edge4" class="edge">
+<title>d_est&#45;&gt;l_new</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M419.67,-781.25C438.18,-781.25 456.66,-781.25 474.51,-781.25"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="474.78,-784.4 483.78,-781.25 474.78,-778.1 474.78,-784.4"/>
+<text text-anchor="start" x="431.76" y="-788.05" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- d_can -->
+<g id="node6" class="node">
+<title>d_can</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="401.59,-605.16 305.72,-702.49 113.96,-702.49 18.09,-605.16 113.96,-507.84 305.72,-507.84 401.59,-605.16"/>
+<text text-anchor="start" x="120.84" y="-646.66" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Is it one of the three</text>
+<text text-anchor="start" x="115.84" y="-631.66" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">page&#45;worthy reasons?</text>
+<text text-anchor="start" x="104.84" y="-616.66" font-family="Helvetica,sans-Serif" font-size="15.00">Hotword (when the hotword</text>
+<text text-anchor="start" x="158.34" y="-601.66" font-family="Helvetica,sans-Serif" font-size="15.00">line is closed)</text>
+<text text-anchor="start" x="115.34" y="-586.66" font-family="Helvetica,sans-Serif" font-size="15.00">Urgent issue or symptom</text>
+<text text-anchor="start" x="104.34" y="-571.66" font-family="Helvetica,sans-Serif" font-size="15.00">Question about a procedure</text>
+<text text-anchor="start" x="173.84" y="-556.66" font-family="Helvetica,sans-Serif" font-size="15.00">tomorrow</text>
+</g>
+<!-- d_est&#45;&gt;d_can -->
+<g id="edge5" class="edge">
+<title>d_est&#45;&gt;d_can</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M209.84,-745.02C209.84,-735.05 209.84,-723.64 209.84,-711.76"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="212.99,-711.59 209.84,-702.59 206.69,-711.59 212.99,-711.59"/>
+<text text-anchor="start" x="209.84" y="-720.13" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- x_np -->
+<g id="node7" class="node">
+<title>x_np</title>
+<path fill="#f5e8e8" stroke="#8e2f2f" stroke-width="1.4" d="M745.34,-655.66C745.34,-655.66 478.34,-655.66 478.34,-655.66 472.34,-655.66 466.34,-649.66 466.34,-643.66 466.34,-643.66 466.34,-566.66 466.34,-566.66 466.34,-560.66 472.34,-554.66 478.34,-554.66 478.34,-554.66 745.34,-554.66 745.34,-554.66 751.34,-554.66 757.34,-560.66 757.34,-566.66 757.34,-566.66 757.34,-643.66 757.34,-643.66 757.34,-649.66 751.34,-655.66 745.34,-655.66"/>
+<text text-anchor="start" x="478.34" y="-637.66" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Do not page</text>
+<text text-anchor="start" x="478.34" y="-622.66" font-family="Helvetica,sans-Serif" font-size="15.00">Routine results, appointment or</text>
+<text text-anchor="start" x="478.34" y="-607.66" font-family="Helvetica,sans-Serif" font-size="15.00">billing issues, refills, forms, or</text>
+<text text-anchor="start" x="478.34" y="-592.66" font-family="Helvetica,sans-Serif" font-size="15.00">non&#45;urgent symptoms that need an</text>
+<text text-anchor="start" x="478.34" y="-577.66" font-family="Helvetica,sans-Serif" font-size="15.00">appointment</text>
+<text text-anchor="start" x="478.34" y="-565.06" font-family="Helvetica,sans-Serif" text-decoration="underline" font-size="12.00" fill="#1f5fa8">route it from Step 3</text>
+</g>
+<!-- d_can&#45;&gt;x_np -->
+<g id="edge6" class="edge">
+<title>d_can&#45;&gt;x_np</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M401.71,-605.16C420.21,-605.16 438.81,-605.16 456.88,-605.16"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="457.28,-608.31 466.28,-605.16 457.28,-602.01 457.28,-608.31"/>
+<text text-anchor="start" x="414.03" y="-611.96" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- d_t1 -->
+<g id="node8" class="node">
+<title>d_t1</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="405.13,-405.5 307.48,-430.62 112.2,-430.62 14.55,-405.5 112.2,-380.38 307.48,-380.38 405.13,-405.5"/>
+<text text-anchor="start" x="102.34" y="-403" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Is it Mon–Fri, 8 AM–4 PM?</text>
+</g>
+<!-- d_can&#45;&gt;d_t1 -->
+<g id="edge7" class="edge">
+<title>d_can&#45;&gt;d_t1</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M209.84,-507.94C209.84,-483.41 209.84,-458.67 209.84,-439.77"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="212.99,-439.71 209.84,-430.71 206.69,-439.71 212.99,-439.71"/>
+<text text-anchor="start" x="209.84" y="-482.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- u_w -->
+<g id="node9" class="node">
+<title>u_w</title>
+<path fill="#fde9e6" stroke="#c0392b" stroke-width="1.8" d="M780.34,-465C780.34,-465 487.34,-465 487.34,-465 481.34,-465 475.34,-459 475.34,-453 475.34,-453 475.34,-358 475.34,-358 475.34,-352 481.34,-346 487.34,-346 487.34,-346 780.34,-346 780.34,-346 786.34,-346 792.34,-352 792.34,-358 792.34,-358 792.34,-453 792.34,-453 792.34,-459 786.34,-465 780.34,-465"/>
+<text text-anchor="start" x="487.34" y="-447" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Warm transfer to &quot;XFER D Surgery</text>
+<text text-anchor="start" x="487.34" y="-432" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">General Hotword&quot;</text>
+<text text-anchor="start" x="487.34" y="-417" font-family="Helvetica,sans-Serif" font-size="15.00">No response in 5 minutes: send a</text>
+<text text-anchor="start" x="487.34" y="-402" font-family="Helvetica,sans-Serif" font-size="15.00">High&#45;Priority TE to the clinical</text>
+<text text-anchor="start" x="487.34" y="-387" font-family="Helvetica,sans-Serif" font-size="15.00">pool (West P 12149 / South P</text>
+<text text-anchor="start" x="487.34" y="-372" font-family="Helvetica,sans-Serif" font-size="15.00">12169) AND page the patient&#39;s</text>
+<text text-anchor="start" x="487.34" y="-357" font-family="Helvetica,sans-Serif" font-size="15.00">surgeon.</text>
+</g>
+<!-- d_t1&#45;&gt;u_w -->
+<g id="edge8" class="edge">
+<title>d_t1&#45;&gt;u_w</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M405.09,-405.5C425.44,-405.5 446,-405.5 466.02,-405.5"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="466.17,-408.65 475.17,-405.5 466.17,-402.35 466.17,-408.65"/>
+<text text-anchor="start" x="417.16" y="-412.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- d_t2 -->
+<g id="node10" class="node">
+<title>d_t2</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="316.76,-275 263.3,-300.12 156.38,-300.12 102.92,-275 156.38,-249.88 263.3,-249.88 316.76,-275"/>
+<text text-anchor="start" x="156.34" y="-272.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Is it 4–5 PM?</text>
+</g>
+<!-- d_t1&#45;&gt;d_t2 -->
+<g id="edge9" class="edge">
+<title>d_t1&#45;&gt;d_t2</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M209.84,-380.33C209.84,-360.36 209.84,-331.78 209.84,-309.58"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="212.99,-309.5 209.84,-300.5 206.69,-309.5 212.99,-309.5"/>
+<text text-anchor="start" x="209.84" y="-320.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- u_45 -->
+<g id="node11" class="node">
+<title>u_45</title>
+<path fill="#fde9e6" stroke="#c0392b" stroke-width="1.8" d="M658.34,-303C658.34,-303 399.34,-303 399.34,-303 393.34,-303 387.34,-297 387.34,-291 387.34,-291 387.34,-259 387.34,-259 387.34,-253 393.34,-247 399.34,-247 399.34,-247 658.34,-247 658.34,-247 664.34,-247 670.34,-253 670.34,-259 670.34,-259 670.34,-291 670.34,-291 670.34,-297 664.34,-303 658.34,-303"/>
+<text text-anchor="start" x="399.34" y="-285" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Page the patient&#39;s established</text>
+<text text-anchor="start" x="399.34" y="-270" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">provider</text>
+<text text-anchor="start" x="399.34" y="-257.4" font-family="Helvetica,sans-Serif" text-decoration="underline" font-size="12.00" fill="#1f5fa8">see Section 6</text>
+</g>
+<!-- d_t2&#45;&gt;u_45 -->
+<g id="edge10" class="edge">
+<title>d_t2&#45;&gt;u_45</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M316.95,-275C336.58,-275 357.4,-275 378.03,-275"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="378.17,-278.15 387.17,-275 378.17,-271.85 378.17,-278.15"/>
+<text text-anchor="start" x="329.07" y="-281.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- u_5 -->
+<g id="node12" class="node">
+<title>u_5</title>
+<path fill="#f2f8fd" stroke="#12305b" stroke-width="1.4" d="M442.84,-204C442.84,-204 186.84,-204 186.84,-204 180.84,-204 174.84,-198 174.84,-192 174.84,-192 174.84,-85 174.84,-85 174.84,-79 180.84,-73 186.84,-73 186.84,-73 442.84,-73 442.84,-73 448.84,-73 454.84,-79 454.84,-85 454.84,-85 454.84,-192 454.84,-192 454.84,-198 448.84,-204 442.84,-204"/>
+<text text-anchor="start" x="186.84" y="-186" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">After 5 PM or weekend</text>
+<text text-anchor="start" x="186.84" y="-171" font-family="Helvetica,sans-Serif" font-size="15.00">The hotword line is closed. Paging</text>
+<text text-anchor="start" x="186.84" y="-156" font-family="Helvetica,sans-Serif" font-size="15.00">General Info allows a page when</text>
+<text text-anchor="start" x="186.84" y="-141" font-family="Helvetica,sans-Serif" font-size="15.00">the line is unavailable.</text>
+<text text-anchor="start" x="186.84" y="-126" font-family="Helvetica,sans-Serif" font-size="15.00">The Surgery documents give no</text>
+<text text-anchor="start" x="186.84" y="-111" font-family="Helvetica,sans-Serif" font-size="15.00">separate step, so confirm with</text>
+<text text-anchor="start" x="186.84" y="-96" font-family="Helvetica,sans-Serif" font-size="15.00">your lead first.</text>
+<text text-anchor="start" x="186.84" y="-83.4" font-family="Helvetica,sans-Serif" text-decoration="underline" font-size="12.00" fill="#1f5fa8">then see Section 6</text>
+</g>
+<!-- d_t2&#45;&gt;u_5 -->
+<g id="edge11" class="edge">
+<title>d_t2&#45;&gt;u_5</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M228.85,-249.64C237.41,-238.68 248,-225.12 258.79,-211.29"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="261.39,-213.09 264.45,-204.05 256.42,-209.21 261.39,-213.09"/>
+<text text-anchor="start" x="253.84" y="-221.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- l_pg -->
+<g id="jump__sec&#45;page__l_pg" class="node">
+<title>l_pg</title>
+<path fill="#ece9fa" stroke="#5a49b0" stroke-width="1.8" d="M478.34,-44C478.34,-44 347.34,-44 347.34,-44 341.34,-44 335.34,-38 335.34,-32 335.34,-32 335.34,-12 335.34,-12 335.34,-6 341.34,0 347.34,0 347.34,0 478.34,0 478.34,0 484.34,0 490.34,-6 490.34,-12 490.34,-12 490.34,-32 490.34,-32 490.34,-38 484.34,-44 478.34,-44"/>
+<text text-anchor="start" x="347.34" y="-26" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Go to Section 6</text>
+<text text-anchor="start" x="347.34" y="-11" font-family="Helvetica,sans-Serif" font-size="15.00">Send the page</text>
+</g>
+<!-- u_45&#45;&gt;l_pg -->
+<g id="edge12" class="edge">
+<title>u_45&#45;&gt;l_pg</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M525.06,-246.76C518.46,-206.26 502.04,-128.95 466.84,-73 461.74,-64.89 454.99,-57.24 448,-50.48"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="449.74,-47.8 440.98,-44.02 445.47,-52.43 449.74,-47.8"/>
+</g>
+<!-- u_5&#45;&gt;l_pg -->
+</g>
+</svg>
+</div><h3 id="new-patient">New patients: never seen by a Duly surgeon</h3><p class="when">Do not page a specialty provider who has never seen the patient.</p><div class="chart" aria-label="New patient rules"><svg role="img"
+ viewBox="0.00 0.00 756.49 475.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(14.4 460.6)">
+<title>G</title>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<path fill="#f2f8fd" stroke="#12305b" stroke-width="1.4" d="M320.19,-446.2C320.19,-446.2 65.19,-446.2 65.19,-446.2 59.19,-446.2 53.19,-440.2 53.19,-434.2 53.19,-434.2 53.19,-384.2 53.19,-384.2 53.19,-378.2 59.19,-372.2 65.19,-372.2 65.19,-372.2 320.19,-372.2 320.19,-372.2 326.19,-372.2 332.19,-378.2 332.19,-384.2 332.19,-384.2 332.19,-434.2 332.19,-434.2 332.19,-440.2 326.19,-446.2 320.19,-446.2"/>
+<text text-anchor="start" x="65.19" y="-428.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Patient has never seen a Duly</text>
+<text text-anchor="start" x="65.19" y="-413.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">surgeon</text>
+<text text-anchor="start" x="65.19" y="-398.2" font-family="Helvetica,sans-Serif" font-size="15.00">Do not page a specialty provider</text>
+<text text-anchor="start" x="65.19" y="-383.2" font-family="Helvetica,sans-Serif" font-size="15.00">who has never seen the patient</text>
+</g>
+<!-- d_nh -->
+<g id="node2" class="node">
+<title>d_nh</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="359.32,-307.27 276.01,-343.12 109.38,-343.12 26.06,-307.27 109.38,-271.42 276.01,-271.42 359.32,-307.27"/>
+<text text-anchor="start" x="102.69" y="-311.27" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Did the caller state a</text>
+<text text-anchor="start" x="152.69" y="-296.27" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">hotword?</text>
+</g>
+<!-- n0&#45;&gt;d_nh -->
+<g id="edge1" class="edge">
+<title>n0&#45;&gt;d_nh</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M192.69,-372.12C192.69,-365.81 192.69,-359.18 192.69,-352.68"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="195.84,-352.29 192.69,-343.29 189.54,-352.29 195.84,-352.29"/>
+</g>
+<!-- d_ns -->
+<g id="node3" class="node">
+<title>d_ns</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="385.58,-180.17 289.14,-228.52 96.25,-228.52 -0.19,-180.17 96.25,-131.83 289.14,-131.83 385.58,-180.17"/>
+<text text-anchor="start" x="88.69" y="-191.67" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Is the hotword line open</text>
+<text text-anchor="start" x="86.69" y="-176.67" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">at the site closest to the</text>
+<text text-anchor="start" x="114.19" y="-161.67" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">patient&#39;s address?</text>
+</g>
+<!-- d_nh&#45;&gt;d_ns -->
+<g id="edge2" class="edge">
+<title>d_nh&#45;&gt;d_ns</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M192.69,-271.09C192.69,-260.71 192.69,-249.08 192.69,-237.72"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="195.84,-237.69 192.69,-228.69 189.54,-237.69 195.84,-237.69"/>
+<text text-anchor="start" x="192.69" y="-246.15" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- o_no -->
+<g id="node6" class="node">
+<title>o_no</title>
+<path fill="#e7f5e9" stroke="#3c8d45" stroke-width="1.4" d="M669.69,-336.77C669.69,-336.77 435.69,-336.77 435.69,-336.77 429.69,-336.77 423.69,-330.77 423.69,-324.77 423.69,-324.77 423.69,-289.77 423.69,-289.77 423.69,-283.77 429.69,-277.77 435.69,-277.77 435.69,-277.77 669.69,-277.77 669.69,-277.77 675.69,-277.77 681.69,-283.77 681.69,-289.77 681.69,-289.77 681.69,-324.77 681.69,-324.77 681.69,-330.77 675.69,-336.77 669.69,-336.77"/>
+<text text-anchor="start" x="435.69" y="-318.77" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Not a hotword</text>
+<text text-anchor="start" x="435.69" y="-303.77" font-family="Helvetica,sans-Serif" font-size="15.00">Offer an office visit to establish</text>
+<text text-anchor="start" x="435.69" y="-288.77" font-family="Helvetica,sans-Serif" font-size="15.00">care</text>
+</g>
+<!-- d_nh&#45;&gt;o_no -->
+<g id="edge3" class="edge">
+<title>d_nh&#45;&gt;o_no</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M359.52,-307.27C377.85,-307.27 396.35,-307.27 414.28,-307.27"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="414.6,-310.42 423.6,-307.27 414.6,-304.12 414.6,-310.42"/>
+<text text-anchor="start" x="371.48" y="-314.07" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- o_nw -->
+<g id="node4" class="node">
+<title>o_nw</title>
+<path fill="#fde9e6" stroke="#c0392b" stroke-width="1.8" d="M715.69,-224.67C715.69,-224.67 467.69,-224.67 467.69,-224.67 461.69,-224.67 455.69,-218.67 455.69,-212.67 455.69,-212.67 455.69,-147.67 455.69,-147.67 455.69,-141.67 461.69,-135.67 467.69,-135.67 467.69,-135.67 715.69,-135.67 715.69,-135.67 721.69,-135.67 727.69,-141.67 727.69,-147.67 727.69,-147.67 727.69,-212.67 727.69,-212.67 727.69,-218.67 721.69,-224.67 715.69,-224.67"/>
+<text text-anchor="start" x="467.69" y="-206.67" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Create the patient chart first</text>
+<text text-anchor="start" x="467.69" y="-191.67" font-family="Helvetica,sans-Serif" font-size="15.00">Warm transfer to that site&#39;s</text>
+<text text-anchor="start" x="467.69" y="-176.67" font-family="Helvetica,sans-Serif" font-size="15.00">hotword line</text>
+<text text-anchor="start" x="467.69" y="-161.67" font-family="Helvetica,sans-Serif" font-size="15.00">If the caller declines, tell the</text>
+<text text-anchor="start" x="467.69" y="-146.67" font-family="Helvetica,sans-Serif" font-size="15.00">nurse</text>
+</g>
+<!-- d_ns&#45;&gt;o_nw -->
+<g id="edge4" class="edge">
+<title>d_ns&#45;&gt;o_nw</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M385.47,-180.17C406.02,-180.17 426.66,-180.17 446.52,-180.17"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="446.59,-183.32 455.59,-180.17 446.59,-177.02 446.59,-183.32"/>
+<text text-anchor="start" x="397.54" y="-186.97" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- o_nc -->
+<g id="node5" class="node">
+<title>o_nc</title>
+<path fill="#f2f8fd" stroke="#12305b" stroke-width="1.4" d="M316.19,-89C316.19,-89 69.19,-89 69.19,-89 63.19,-89 57.19,-83 57.19,-77 57.19,-77 57.19,-12 57.19,-12 57.19,-6 63.19,0 69.19,0 69.19,0 316.19,0 316.19,0 322.19,0 328.19,-6 328.19,-12 328.19,-12 328.19,-77 328.19,-77 328.19,-83 322.19,-89 316.19,-89"/>
+<text text-anchor="start" x="69.19" y="-71" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Do not page</text>
+<text text-anchor="start" x="69.19" y="-56" font-family="Helvetica,sans-Serif" font-size="15.00">Offer the nearest ICC if it is</text>
+<text text-anchor="start" x="69.19" y="-41" font-family="Helvetica,sans-Serif" font-size="15.00">open, or another urgent care or</text>
+<text text-anchor="start" x="69.19" y="-26" font-family="Helvetica,sans-Serif" font-size="15.00">the ER</text>
+<text text-anchor="start" x="69.19" y="-11" font-family="Helvetica,sans-Serif" font-size="15.00">Offer a new&#45;patient appointment</text>
+</g>
+<!-- d_ns&#45;&gt;o_nc -->
+<g id="edge5" class="edge">
+<title>d_ns&#45;&gt;o_nc</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M192.69,-131.67C192.69,-120.88 192.69,-109.36 192.69,-98.36"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="195.84,-98.28 192.69,-89.28 189.54,-98.28 195.84,-98.28"/>
+<text text-anchor="start" x="192.69" y="-106.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+</g>
+</svg>
+</div><details><summary>What you can and cannot page for</summary><div class="in"><div class="two"><div><b>You can page for</b><ul><li>Hotwords, if the hotword line is not available</li><li>Urgent issues and symptoms</li><li>Questions about a procedure the patient has tomorrow</li></ul></div><div><b>You do not page for</b><ul><li>Routine test results</li><li>Appointment issues</li><li>Billing or insurance issues</li><li>Medication refills</li><li>Non-urgent symptoms that need an appointment</li><li>Forms</li><li>Medical advice for non-patients</li></ul></div></div></div></details>
+ <details><summary>Scripting when the site or ICC is closed (new patients)</summary><div class="in"><ul><li>Thank the caller for contacting Duly and say you are sorry they are going through this.</li><li>ICC open: say they are welcome at an ICC location if they feel they need to be seen.</li><li>After hours: say the ICC is closed and they can use another urgent care or the ER if they feel they need to be seen.</li><li>Either way: explain you cannot page the provider because they are not an established patient, and offer a new-patient appointment.</li></ul></div></details><p class="top"><a href="#top">Back to the top</a></p></section><section id="sec-hospital"><h2>Section 3: Hospital and provider calls</h2><p class="when">Use this when the caller is a hospital, a provider or a physician office, or asks to reach the on-call doctor.</p><div class="chart" aria-label="Hospital and provider call flow"><svg role="img"
+ viewBox="0.00 0.00 1011.87 952.50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(14.4 938.1)">
+<title>G</title>
+<!-- h0 -->
+<g id="node1" class="node">
+<title>h0</title>
+<path fill="#f2f8fd" stroke="#12305b" stroke-width="1.4" d="M337.57,-923.7C337.57,-923.7 75.57,-923.7 75.57,-923.7 69.57,-923.7 63.57,-917.7 63.57,-911.7 63.57,-911.7 63.57,-891.7 63.57,-891.7 63.57,-885.7 69.57,-879.7 75.57,-879.7 75.57,-879.7 337.57,-879.7 337.57,-879.7 343.57,-879.7 349.57,-885.7 349.57,-891.7 349.57,-891.7 349.57,-911.7 349.57,-911.7 349.57,-917.7 343.57,-923.7 337.57,-923.7"/>
+<text text-anchor="start" x="75.57" y="-905.7" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Hospital, provider or physician</text>
+<text text-anchor="start" x="75.57" y="-890.7" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">office call</text>
+</g>
+<!-- d_oc -->
+<g id="node2" class="node">
+<title>d_oc</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="413.22,-814.78 309.9,-850.63 103.25,-850.63 -0.07,-814.78 103.25,-778.93 309.9,-778.93 413.22,-814.78"/>
+<text text-anchor="start" x="92.07" y="-818.78" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Do they want to change an</text>
+<text text-anchor="start" x="133.07" y="-803.78" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">on&#45;call schedule?</text>
+</g>
+<!-- h0&#45;&gt;d_oc -->
+<g id="edge1" class="edge">
+<title>h0&#45;&gt;d_oc</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M206.57,-879.27C206.57,-873.33 206.57,-866.65 206.57,-859.91"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="209.72,-859.75 206.57,-850.75 203.42,-859.75 209.72,-859.75"/>
+</g>
+<!-- x_oc -->
+<g id="node3" class="node">
+<title>x_oc</title>
+<path fill="#e7f5e9" stroke="#3c8d45" stroke-width="1.4" d="M789.57,-836.78C789.57,-836.78 495.57,-836.78 495.57,-836.78 489.57,-836.78 483.57,-830.78 483.57,-824.78 483.57,-824.78 483.57,-804.78 483.57,-804.78 483.57,-798.78 489.57,-792.78 495.57,-792.78 495.57,-792.78 789.57,-792.78 789.57,-792.78 795.57,-792.78 801.57,-798.78 801.57,-804.78 801.57,-804.78 801.57,-824.78 801.57,-824.78 801.57,-830.78 795.57,-836.78 789.57,-836.78"/>
+<text text-anchor="start" x="495.57" y="-818.78" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Connect them to the site manager</text>
+<text text-anchor="start" x="495.57" y="-803.78" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">or PerfectServe support</text>
+</g>
+<!-- d_oc&#45;&gt;x_oc -->
+<g id="edge2" class="edge">
+<title>d_oc&#45;&gt;x_oc</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M413.4,-814.78C433.81,-814.78 454.34,-814.78 474.29,-814.78"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="474.41,-817.93 483.41,-814.78 474.41,-811.63 474.41,-817.93"/>
+<text text-anchor="start" x="425.36" y="-821.58" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- d_pl -->
+<g id="node4" class="node">
+<title>d_pl</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="381.53,-698.85 294.05,-734.7 119.09,-734.7 31.61,-698.85 119.09,-663 294.05,-663 381.53,-698.85"/>
+<text text-anchor="start" x="111.57" y="-702.85" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Do they want a plastic</text>
+<text text-anchor="start" x="130.57" y="-687.85" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">surgery provider?</text>
+</g>
+<!-- d_oc&#45;&gt;d_pl -->
+<g id="edge3" class="edge">
+<title>d_oc&#45;&gt;d_pl</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M206.57,-778.67C206.57,-767.73 206.57,-755.53 206.57,-744.05"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="209.72,-744.04 206.57,-735.04 203.42,-744.04 209.72,-744.04"/>
+<text text-anchor="start" x="206.57" y="-753.65" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- h_pl -->
+<g id="node5" class="node">
+<title>h_pl</title>
+<path fill="#fde9e6" stroke="#c0392b" stroke-width="1.8" d="M691.07,-735.85C691.07,-735.85 464.07,-735.85 464.07,-735.85 458.07,-735.85 452.07,-729.85 452.07,-723.85 452.07,-723.85 452.07,-673.85 452.07,-673.85 452.07,-667.85 458.07,-661.85 464.07,-661.85 464.07,-661.85 691.07,-661.85 691.07,-661.85 697.07,-661.85 703.07,-667.85 703.07,-673.85 703.07,-673.85 703.07,-723.85 703.07,-723.85 703.07,-729.85 697.07,-735.85 691.07,-735.85"/>
+<text text-anchor="start" x="464.07" y="-717.85" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Page the surgeon by name</text>
+<text text-anchor="start" x="464.07" y="-702.85" font-family="Helvetica,sans-Serif" font-size="15.00">Dr. Alexander (her)</text>
+<text text-anchor="start" x="464.07" y="-687.85" font-family="Helvetica,sans-Serif" font-size="15.00">Dr. Kate (her)</text>
+<text text-anchor="start" x="464.07" y="-672.85" font-family="Helvetica,sans-Serif" font-size="15.00">Dr. Asif (him)</text>
+</g>
+<!-- d_pl&#45;&gt;h_pl -->
+<g id="edge4" class="edge">
+<title>d_pl&#45;&gt;h_pl</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M381.48,-698.85C402.08,-698.85 422.85,-698.85 442.78,-698.85"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="442.88,-702 451.88,-698.85 442.88,-695.7 442.88,-702"/>
+<text text-anchor="start" x="393.69" y="-705.65" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- d_t1 -->
+<g id="node6" class="node">
+<title>d_t1</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="401.86,-575.85 304.22,-600.98 108.93,-600.98 11.29,-575.85 108.93,-550.73 304.22,-550.73 401.86,-575.85"/>
+<text text-anchor="start" x="99.07" y="-573.35" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Is it Mon–Fri, 8 AM–4 PM?</text>
+</g>
+<!-- d_pl&#45;&gt;d_t1 -->
+<g id="edge5" class="edge">
+<title>d_pl&#45;&gt;d_t1</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M206.57,-662.85C206.57,-646.28 206.57,-626.59 206.57,-610.23"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="209.72,-610.03 206.57,-601.03 203.42,-610.03 209.72,-610.03"/>
+<text text-anchor="start" x="206.57" y="-636.65" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- h_w -->
+<g id="node7" class="node">
+<title>h_w</title>
+<path fill="#e7f5e9" stroke="#3c8d45" stroke-width="1.4" d="M745.07,-618.85C745.07,-618.85 484.07,-618.85 484.07,-618.85 478.07,-618.85 472.07,-612.85 472.07,-606.85 472.07,-606.85 472.07,-544.85 472.07,-544.85 472.07,-538.85 478.07,-532.85 484.07,-532.85 484.07,-532.85 745.07,-532.85 745.07,-532.85 751.07,-532.85 757.07,-538.85 757.07,-544.85 757.07,-544.85 757.07,-606.85 757.07,-606.85 757.07,-612.85 751.07,-618.85 745.07,-618.85"/>
+<text text-anchor="start" x="484.07" y="-600.85" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Warm transfer to the patient&#39;s</text>
+<text text-anchor="start" x="484.07" y="-585.85" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">surgeon&#39;s Scheduler ext.</text>
+<text text-anchor="start" x="484.07" y="-570.85" font-family="Helvetica,sans-Serif" font-size="15.00">No answer: TE by priority (High</text>
+<text text-anchor="start" x="484.07" y="-555.85" font-family="Helvetica,sans-Serif" font-size="15.00">when appropriate)</text>
+<text text-anchor="start" x="484.07" y="-543.25" font-family="Helvetica,sans-Serif" text-decoration="underline" font-size="12.00" fill="#1f5fa8">see the scheduler list</text>
+</g>
+<!-- d_t1&#45;&gt;h_w -->
+<g id="edge6" class="edge">
+<title>d_t1&#45;&gt;h_w</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M401.91,-575.85C422.41,-575.85 443.03,-575.85 462.94,-575.85"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="463.03,-579 472.03,-575.85 463.03,-572.7 463.03,-579"/>
+<text text-anchor="start" x="413.89" y="-582.65" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- d_t2 -->
+<g id="node8" class="node">
+<title>d_t2</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="313.5,-454.35 260.03,-479.48 153.11,-479.48 99.65,-454.35 153.11,-429.23 260.03,-429.23 313.5,-454.35"/>
+<text text-anchor="start" x="153.07" y="-451.85" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Is it 4–5 PM?</text>
+</g>
+<!-- d_t1&#45;&gt;d_t2 -->
+<g id="edge7" class="edge">
+<title>d_t1&#45;&gt;d_t2</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M206.57,-550.67C206.57,-532.85 206.57,-508.4 206.57,-488.72"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="209.72,-488.5 206.57,-479.5 203.42,-488.5 209.72,-488.5"/>
+<text text-anchor="start" x="206.57" y="-507.65" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- h_45 -->
+<g id="node9" class="node">
+<title>h_45</title>
+<path fill="#fde9e6" stroke="#c0392b" stroke-width="1.8" d="M659.07,-489.85C659.07,-489.85 396.07,-489.85 396.07,-489.85 390.07,-489.85 384.07,-483.85 384.07,-477.85 384.07,-477.85 384.07,-430.85 384.07,-430.85 384.07,-424.85 390.07,-418.85 396.07,-418.85 396.07,-418.85 659.07,-418.85 659.07,-418.85 665.07,-418.85 671.07,-424.85 671.07,-430.85 671.07,-430.85 671.07,-477.85 671.07,-477.85 671.07,-483.85 665.07,-489.85 659.07,-489.85"/>
+<text text-anchor="start" x="396.07" y="-471.85" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Ask who the treating physician</text>
+<text text-anchor="start" x="396.07" y="-456.85" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">is then page that physician</text>
+<text text-anchor="start" x="396.07" y="-441.85" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">directly</text>
+<text text-anchor="start" x="396.07" y="-429.25" font-family="Helvetica,sans-Serif" text-decoration="underline" font-size="12.00" fill="#1f5fa8">see Section 6</text>
+</g>
+<!-- d_t2&#45;&gt;h_45 -->
+<g id="edge8" class="edge">
+<title>d_t2&#45;&gt;h_45</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M313.91,-454.35C333.44,-454.35 354.15,-454.35 374.69,-454.35"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="374.8,-457.5 383.8,-454.35 374.8,-451.2 374.8,-457.5"/>
+<text text-anchor="start" x="325.8" y="-461.15" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- d_nm -->
+<g id="node10" class="node">
+<title>d_nm</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="394.16,-339.93 300.37,-375.78 112.78,-375.78 18.98,-339.93 112.78,-304.07 300.37,-304.07 394.16,-339.93"/>
+<text text-anchor="start" x="103.57" y="-343.93" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">After 5 PM: did they ask</text>
+<text text-anchor="start" x="104.57" y="-328.93" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">for a provider by name?</text>
+</g>
+<!-- d_t2&#45;&gt;d_nm -->
+<g id="edge9" class="edge">
+<title>d_t2&#45;&gt;d_nm</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M206.57,-428.96C206.57,-416.12 206.57,-399.99 206.57,-385.05"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="209.72,-384.94 206.57,-375.94 203.42,-384.94 209.72,-384.94"/>
+<text text-anchor="start" x="206.57" y="-393.65" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- h_nm -->
+<g id="node11" class="node">
+<title>h_nm</title>
+<path fill="#f2f8fd" stroke="#12305b" stroke-width="1.4" d="M750.57,-361.93C750.57,-361.93 476.57,-361.93 476.57,-361.93 470.57,-361.93 464.57,-355.93 464.57,-349.93 464.57,-349.93 464.57,-329.93 464.57,-329.93 464.57,-323.93 470.57,-317.93 476.57,-317.93 476.57,-317.93 750.57,-317.93 750.57,-317.93 756.57,-317.93 762.57,-323.93 762.57,-329.93 762.57,-329.93 762.57,-349.93 762.57,-349.93 762.57,-355.93 756.57,-361.93 750.57,-361.93"/>
+<text text-anchor="start" x="476.57" y="-343.93" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Search by name in PerfectServe</text>
+<text text-anchor="start" x="476.57" y="-328.93" font-family="Helvetica,sans-Serif" font-size="15.00">Follow the on&#45;call prompts</text>
+</g>
+<!-- d_nm&#45;&gt;h_nm -->
+<g id="edge10" class="edge">
+<title>d_nm&#45;&gt;h_nm</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M394.29,-339.93C414.72,-339.93 435.36,-339.93 455.38,-339.93"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="455.53,-343.08 464.53,-339.93 455.53,-336.78 455.53,-343.08"/>
+<text text-anchor="start" x="406.47" y="-346.73" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- h_fd -->
+<g id="node12" class="node">
+<title>h_fd</title>
+<path fill="#f2f8fd" stroke="#12305b" stroke-width="1.4" d="M507.07,-261C507.07,-261 242.07,-261 242.07,-261 236.07,-261 230.07,-255 230.07,-249 230.07,-249 230.07,-217 230.07,-217 230.07,-211 236.07,-205 242.07,-205 242.07,-205 507.07,-205 507.07,-205 513.07,-205 519.07,-211 519.07,-217 519.07,-217 519.07,-249 519.07,-249 519.07,-255 513.07,-261 507.07,-261"/>
+<text text-anchor="start" x="242.07" y="-243" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Use the General Surgery folder</text>
+<text text-anchor="start" x="242.07" y="-228" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">for the hospital they named</text>
+<text text-anchor="start" x="242.07" y="-215.4" font-family="Helvetica,sans-Serif" text-decoration="underline" font-size="12.00" fill="#1f5fa8">see the folder list below</text>
+</g>
+<!-- d_nm&#45;&gt;h_fd -->
+<g id="edge11" class="edge">
+<title>d_nm&#45;&gt;h_fd</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M262.52,-303.99C282.15,-291.73 304.09,-278.02 323.31,-266.01"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="325.13,-268.59 331.09,-261.16 321.79,-263.25 325.13,-268.59"/>
+<text text-anchor="start" x="306.57" y="-278.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- d_nc -->
+<g id="node13" class="node">
+<title>d_nc</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="659.97,-131.5 569.77,-167.35 389.38,-167.35 299.18,-131.5 389.38,-95.65 569.77,-95.65 659.97,-131.5"/>
+<text text-anchor="start" x="381.07" y="-135.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Does a &quot;no one on call&quot;</text>
+<text text-anchor="start" x="405.57" y="-120.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">message appear?</text>
+</g>
+<!-- h_nm&#45;&gt;d_nc -->
+<g id="edge12" class="edge">
+<title>h_nm&#45;&gt;d_nc</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M601.26,-317.75C585.6,-291.1 557.5,-244.07 531.57,-205 525.02,-195.13 517.74,-184.68 510.76,-174.88"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="513.29,-173.02 505.49,-167.54 508.17,-176.69 513.29,-173.02"/>
+</g>
+<!-- h_fd&#45;&gt;d_nc -->
+<g id="edge13" class="edge">
+<title>h_fd&#45;&gt;d_nc</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M403.27,-204.81C413.32,-195.28 424.86,-184.35 435.86,-173.92"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="438.26,-175.99 442.63,-167.51 433.93,-171.41 438.26,-175.99"/>
+</g>
+<!-- h_nc -->
+<g id="node14" class="node">
+<title>h_nc</title>
+<path fill="#f5e8e8" stroke="#8e2f2f" stroke-width="1.4" d="M971.07,-176C971.07,-176 742.07,-176 742.07,-176 736.07,-176 730.07,-170 730.07,-164 730.07,-164 730.07,-99 730.07,-99 730.07,-93 736.07,-87 742.07,-87 742.07,-87 971.07,-87 971.07,-87 977.07,-87 983.07,-93 983.07,-99 983.07,-99 983.07,-164 983.07,-164 983.07,-170 977.07,-176 971.07,-176"/>
+<text text-anchor="start" x="742.07" y="-158" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Duly is not on call that day</text>
+<text text-anchor="start" x="742.07" y="-143" font-family="Helvetica,sans-Serif" font-size="15.00">Tell the caller to follow their</text>
+<text text-anchor="start" x="742.07" y="-128" font-family="Helvetica,sans-Serif" font-size="15.00">own on&#45;call schedule. Life&#45;</text>
+<text text-anchor="start" x="742.07" y="-113" font-family="Helvetica,sans-Serif" font-size="15.00">threatening:</text>
+<text text-anchor="start" x="742.07" y="-98" font-family="Helvetica,sans-Serif" font-size="15.00">911 or the nearest ER</text>
+</g>
+<!-- d_nc&#45;&gt;h_nc -->
+<g id="edge14" class="edge">
+<title>d_nc&#45;&gt;h_nc</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M660.07,-131.5C680.57,-131.5 701.2,-131.5 720.98,-131.5"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="721.01,-134.65 730.01,-131.5 721.01,-128.35 721.01,-134.65"/>
+<text text-anchor="start" x="672.05" y="-138.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- h_ok -->
+<g id="node15" class="node">
+<title>h_ok</title>
+<path fill="#e7f5e9" stroke="#3c8d45" stroke-width="1.4" d="M558.57,-44C558.57,-44 400.57,-44 400.57,-44 394.57,-44 388.57,-38 388.57,-32 388.57,-32 388.57,-12 388.57,-12 388.57,-6 394.57,0 400.57,0 400.57,0 558.57,0 558.57,0 564.57,0 570.57,-6 570.57,-12 570.57,-12 570.57,-32 570.57,-32 570.57,-38 564.57,-44 558.57,-44"/>
+<text text-anchor="start" x="400.57" y="-26" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">The page goes out</text>
+<text text-anchor="start" x="400.57" y="-11" font-family="Helvetica,sans-Serif" font-size="15.00">Document the page</text>
+</g>
+<!-- d_nc&#45;&gt;h_ok -->
+<g id="edge15" class="edge">
+<title>d_nc&#45;&gt;h_ok</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M479.57,-95.6C479.57,-81.98 479.57,-66.52 479.57,-53.37"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="482.72,-53.27 479.57,-44.27 476.42,-53.27 482.72,-53.27"/>
+<text text-anchor="start" x="479.57" y="-61.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+</g>
+</svg>
+</div><details id="folders"><summary>Which General Surgery folder do I use?</summary><div class="in"><div class="tbl"><table><tr><th>Folder</th><th>Hospitals</th></tr>
+ <tr><td>Duly - General Surgery</td><td>AdventHealth La Grange, Edward, Palos, CDH</td></tr>
+ <tr><td>Duly - General Surgery - Elmhurst York</td><td>Elmhurst Hospital (not the main General Surgery folder)</td></tr>
+ <tr><td>Duly - General Surgery - AMBC SAMC</td><td>Ascension Alexian Brothers, Ascension Saint Alexius Medical Center</td></tr>
+ <tr><td>Duly - General Surgery - South Pod Joliet</td><td>Ascension Saint Joseph - Joliet, Silver Cross</td></tr></table></div></div></details>
+ <p class="note">Hospital calls: type the specialty or department name in PerfectServe and follow the prompts for the hospital. Never override the call schedule.</p><p class="top"><a href="#top">Back to the top</a></p></section><section id="sec-visit"><h2>Section 4: Office visits</h2><p class="when">Use this when a patient wants an office visit: new, follow-up, post-op, consult, bariatric, colonoscopy, or a different surgeon.</p><div class="chart" aria-label="Office visit scheduling flow"><svg role="img"
+ viewBox="0.00 0.00 754.51 1484.09" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(14.4 1469.69)">
+<title>G</title>
+<!-- v0 -->
+<g id="node1" class="node">
+<title>v0</title>
+<path fill="#f2f8fd" stroke="#12305b" stroke-width="1.4" d="M326.71,-1455.29C326.71,-1455.29 89.71,-1455.29 89.71,-1455.29 83.71,-1455.29 77.71,-1449.29 77.71,-1443.29 77.71,-1443.29 77.71,-1423.29 77.71,-1423.29 77.71,-1417.29 83.71,-1411.29 89.71,-1411.29 89.71,-1411.29 326.71,-1411.29 326.71,-1411.29 332.71,-1411.29 338.71,-1417.29 338.71,-1423.29 338.71,-1423.29 338.71,-1443.29 338.71,-1443.29 338.71,-1449.29 332.71,-1455.29 326.71,-1455.29"/>
+<text text-anchor="start" x="89.71" y="-1437.29" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Patient wants an office visit</text>
+<text text-anchor="start" x="89.71" y="-1422.29" font-family="Helvetica,sans-Serif" font-size="15.00">(not the surgery itself)</text>
+</g>
+<!-- d_pls -->
+<g id="node2" class="node">
+<title>d_pls</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="374.84,-1346.36 291.52,-1382.22 124.89,-1382.22 41.58,-1346.36 124.89,-1310.51 291.52,-1310.51 374.84,-1346.36"/>
+<text text-anchor="start" x="118.21" y="-1350.36" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Is it a plastic surgery</text>
+<text text-anchor="start" x="185.21" y="-1335.36" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">visit?</text>
+</g>
+<!-- v0&#45;&gt;d_pls -->
+<g id="edge1" class="edge">
+<title>v0&#45;&gt;d_pls</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M208.21,-1410.86C208.21,-1404.91 208.21,-1398.23 208.21,-1391.49"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="211.36,-1391.33 208.21,-1382.33 205.06,-1391.33 211.36,-1391.33"/>
+</g>
+<!-- l_pls -->
+<g id="jump__sec&#45;plastic__l_pls" class="node">
+<title>l_pls</title>
+<path fill="#ece9fa" stroke="#5a49b0" stroke-width="1.8" d="M588.71,-1368.36C588.71,-1368.36 457.71,-1368.36 457.71,-1368.36 451.71,-1368.36 445.71,-1362.36 445.71,-1356.36 445.71,-1356.36 445.71,-1336.36 445.71,-1336.36 445.71,-1330.36 451.71,-1324.36 457.71,-1324.36 457.71,-1324.36 588.71,-1324.36 588.71,-1324.36 594.71,-1324.36 600.71,-1330.36 600.71,-1336.36 600.71,-1336.36 600.71,-1356.36 600.71,-1356.36 600.71,-1362.36 594.71,-1368.36 588.71,-1368.36"/>
+<text text-anchor="start" x="457.71" y="-1350.36" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Go to Section 5</text>
+<text text-anchor="start" x="457.71" y="-1335.36" font-family="Helvetica,sans-Serif" font-size="15.00">Plastic surgery</text>
+</g>
+<!-- d_pls&#45;&gt;l_pls -->
+<g id="edge2" class="edge">
+<title>d_pls&#45;&gt;l_pls</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M374.93,-1346.36C396.21,-1346.36 417.26,-1346.36 436.52,-1346.36"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="436.53,-1349.51 445.53,-1346.36 436.53,-1343.21 436.53,-1349.51"/>
+<text text-anchor="start" x="387.24" y="-1353.16" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- d_ins -->
+<g id="node4" class="node">
+<title>d_ins</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="392.76,-1197.22 300.48,-1267.66 115.93,-1267.66 23.65,-1197.22 115.93,-1126.78 300.48,-1126.78 392.76,-1197.22"/>
+<text text-anchor="start" x="107.21" y="-1222.22" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Ask: has your insurance</text>
+<text text-anchor="start" x="167.71" y="-1207.22" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">changed?</text>
+<text text-anchor="start" x="128.21" y="-1192.22" font-family="Helvetica,sans-Serif" font-size="15.00">Does the policy allow</text>
+<text text-anchor="start" x="173.21" y="-1177.22" font-family="Helvetica,sans-Serif" font-size="15.00">booking?</text>
+<text text-anchor="start" x="118.71" y="-1164.62" font-family="Helvetica,sans-Serif" text-decoration="underline" font-size="12.00" fill="#1f5fa8">see the insurance rules below</text>
+</g>
+<!-- d_pls&#45;&gt;d_ins -->
+<g id="edge3" class="edge">
+<title>d_pls&#45;&gt;d_ins</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M208.21,-1310.49C208.21,-1300.2 208.21,-1288.49 208.21,-1276.62"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="211.36,-1276.52 208.21,-1267.52 205.06,-1276.52 211.36,-1276.52"/>
+<text text-anchor="start" x="208.21" y="-1285.24" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- x_ins -->
+<g id="node5" class="node">
+<title>x_ins</title>
+<path fill="#f5e8e8" stroke="#8e2f2f" stroke-width="1.4" d="M698.71,-1226.72C698.71,-1226.72 469.71,-1226.72 469.71,-1226.72 463.71,-1226.72 457.71,-1220.72 457.71,-1214.72 457.71,-1214.72 457.71,-1179.72 457.71,-1179.72 457.71,-1173.72 463.71,-1167.72 469.71,-1167.72 469.71,-1167.72 698.71,-1167.72 698.71,-1167.72 704.71,-1167.72 710.71,-1173.72 710.71,-1179.72 710.71,-1179.72 710.71,-1214.72 710.71,-1214.72 710.71,-1220.72 704.71,-1226.72 698.71,-1226.72"/>
+<text text-anchor="start" x="469.71" y="-1208.72" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Do not book outside policy</text>
+<text text-anchor="start" x="469.71" y="-1193.72" font-family="Helvetica,sans-Serif" font-size="15.00">Explain the policy</text>
+<text text-anchor="start" x="469.71" y="-1178.72" font-family="Helvetica,sans-Serif" font-size="15.00">Document the call</text>
+</g>
+<!-- d_ins&#45;&gt;x_ins -->
+<g id="edge4" class="edge">
+<title>d_ins&#45;&gt;x_ins</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M392.9,-1197.22C411.56,-1197.22 430.27,-1197.22 448.28,-1197.22"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="448.63,-1200.37 457.63,-1197.22 448.63,-1194.07 448.63,-1200.37"/>
+<text text-anchor="start" x="405.22" y="-1204.02" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- q1 -->
+<g id="node6" class="node">
+<title>q1</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="361.71,-1047 284.96,-1072.12 131.46,-1072.12 54.7,-1047 131.46,-1021.88 284.96,-1021.88 361.71,-1047"/>
+<text text-anchor="start" x="126.21" y="-1044.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Hospital follow&#45;up?</text>
+</g>
+<!-- d_ins&#45;&gt;q1 -->
+<g id="edge5" class="edge">
+<title>d_ins&#45;&gt;q1</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M208.21,-1126.88C208.21,-1111.12 208.21,-1095.07 208.21,-1081.59"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="211.36,-1081.28 208.21,-1072.28 205.06,-1081.28 211.36,-1081.28"/>
+<text text-anchor="start" x="208.21" y="-1101.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- o_q1 -->
+<g id="node7" class="node">
+<title>o_q1</title>
+<path fill="#e7f5e9" stroke="#3c8d45" stroke-width="1.4" d="M713.71,-1084C713.71,-1084 444.71,-1084 444.71,-1084 438.71,-1084 432.71,-1078 432.71,-1072 432.71,-1072 432.71,-1022 432.71,-1022 432.71,-1016 438.71,-1010 444.71,-1010 444.71,-1010 713.71,-1010 713.71,-1010 719.71,-1010 725.71,-1016 725.71,-1022 725.71,-1022 725.71,-1072 725.71,-1072 725.71,-1078 719.71,-1084 713.71,-1084"/>
+<text text-anchor="start" x="444.71" y="-1066" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Book it this way</text>
+<text text-anchor="start" x="444.71" y="-1051" font-family="Helvetica,sans-Serif" font-size="15.00">New to the Surgery Dept: book with</text>
+<text text-anchor="start" x="444.71" y="-1036" font-family="Helvetica,sans-Serif" font-size="15.00">the Duly surgeon seen in the</text>
+<text text-anchor="start" x="444.71" y="-1021" font-family="Helvetica,sans-Serif" font-size="15.00">hospital</text>
+</g>
+<!-- q1&#45;&gt;o_q1 -->
+<g id="edge6" class="edge">
+<title>q1&#45;&gt;o_q1</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M361.78,-1047C382.19,-1047 403.12,-1047 423.56,-1047"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="423.6,-1050.15 432.6,-1047 423.6,-1043.85 423.6,-1050.15"/>
+<text text-anchor="start" x="374.21" y="-1053.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- q2 -->
+<g id="node8" class="node">
+<title>q2</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="288.87,-915 248.54,-940.12 167.87,-940.12 127.54,-915 167.87,-889.88 248.54,-889.88 288.87,-915"/>
+<text text-anchor="start" x="170.71" y="-912.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Post&#45;op?</text>
+</g>
+<!-- q1&#45;&gt;q2 -->
+<g id="edge7" class="edge">
+<title>q1&#45;&gt;q2</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M208.21,-1021.85C208.21,-1001.55 208.21,-972.3 208.21,-949.7"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="211.36,-949.46 208.21,-940.46 205.06,-949.46 211.36,-949.46"/>
+<text text-anchor="start" x="208.21" y="-984.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- o_q2 -->
+<g id="node9" class="node">
+<title>o_q2</title>
+<path fill="#e7f5e9" stroke="#3c8d45" stroke-width="1.4" d="M639.21,-967C639.21,-967 371.21,-967 371.21,-967 365.21,-967 359.21,-961 359.21,-955 359.21,-955 359.21,-875 359.21,-875 359.21,-869 365.21,-863 371.21,-863 371.21,-863 639.21,-863 639.21,-863 645.21,-863 651.21,-869 651.21,-875 651.21,-875 651.21,-955 651.21,-955 651.21,-961 645.21,-967 639.21,-967"/>
+<text text-anchor="start" x="371.21" y="-949" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Book it this way</text>
+<text text-anchor="start" x="371.21" y="-934" font-family="Helvetica,sans-Serif" font-size="15.00">Usually booked when the surgery is</text>
+<text text-anchor="start" x="371.21" y="-919" font-family="Helvetica,sans-Serif" font-size="15.00">booked</text>
+<text text-anchor="start" x="371.21" y="-904" font-family="Helvetica,sans-Serif" font-size="15.00">Cancer or breast cancer: ONLY the</text>
+<text text-anchor="start" x="371.21" y="-889" font-family="Helvetica,sans-Serif" font-size="15.00">surgeon who operated. Others:</text>
+<text text-anchor="start" x="371.21" y="-874" font-family="Helvetica,sans-Serif" font-size="15.00">General Surgery in the DT</text>
+</g>
+<!-- q2&#45;&gt;o_q2 -->
+<g id="edge8" class="edge">
+<title>q2&#45;&gt;o_q2</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M288.97,-915C307.98,-915 328.88,-915 349.96,-915"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="350,-918.15 359,-915 350,-911.85 350,-918.15"/>
+<text text-anchor="start" x="301.12" y="-921.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- q3 -->
+<g id="node10" class="node">
+<title>q3</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="322.33,-790.5 265.27,-815.62 151.15,-815.62 94.09,-790.5 151.15,-765.38 265.27,-765.38 322.33,-790.5"/>
+<text text-anchor="start" x="150.21" y="-788" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Survivorship?</text>
+</g>
+<!-- q2&#45;&gt;q3 -->
+<g id="edge9" class="edge">
+<title>q2&#45;&gt;q3</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M208.21,-889.8C208.21,-871.17 208.21,-845.23 208.21,-824.67"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="211.36,-824.65 208.21,-815.65 205.06,-824.65 211.36,-824.65"/>
+<text text-anchor="start" x="208.21" y="-837.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- o_q3 -->
+<g id="node11" class="node">
+<title>o_q3</title>
+<path fill="#e7f5e9" stroke="#3c8d45" stroke-width="1.4" d="M659.21,-820C659.21,-820 405.21,-820 405.21,-820 399.21,-820 393.21,-814 393.21,-808 393.21,-808 393.21,-773 393.21,-773 393.21,-767 399.21,-761 405.21,-761 405.21,-761 659.21,-761 659.21,-761 665.21,-761 671.21,-767 671.21,-773 671.21,-773 671.21,-808 671.21,-808 671.21,-814 665.21,-820 659.21,-820"/>
+<text text-anchor="start" x="405.21" y="-802" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Book it this way</text>
+<text text-anchor="start" x="405.21" y="-787" font-family="Helvetica,sans-Serif" font-size="15.00">Only Erin Leaf, PA (leave date</text>
+<text text-anchor="start" x="405.21" y="-772" font-family="Helvetica,sans-Serif" font-size="15.00">10/17/26: confirm with your lead)</text>
+</g>
+<!-- q3&#45;&gt;o_q3 -->
+<g id="edge10" class="edge">
+<title>q3&#45;&gt;o_q3</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M322.44,-790.5C342.35,-790.5 363.33,-790.5 384,-790.5"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="384.16,-793.65 393.16,-790.5 384.16,-787.35 384.16,-793.65"/>
+<text text-anchor="start" x="334.86" y="-797.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- q4 -->
+<g id="node12" class="node">
+<title>q4</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="363.48,-681 285.84,-706.12 130.57,-706.12 52.94,-681 130.57,-655.88 285.84,-655.88 363.48,-681"/>
+<text text-anchor="start" x="125.21" y="-678.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Bariatric follow&#45;up?</text>
+</g>
+<!-- q3&#45;&gt;q4 -->
+<g id="edge11" class="edge">
+<title>q3&#45;&gt;q4</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M208.21,-765.37C208.21,-750.68 208.21,-731.69 208.21,-715.54"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="211.36,-715.42 208.21,-706.42 205.06,-715.42 211.36,-715.42"/>
+<text text-anchor="start" x="208.21" y="-735.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- o_q4 -->
+<g id="node13" class="node">
+<title>o_q4</title>
+<path fill="#e7f5e9" stroke="#3c8d45" stroke-width="1.4" d="M686.71,-718C686.71,-718 445.71,-718 445.71,-718 439.71,-718 433.71,-712 433.71,-706 433.71,-706 433.71,-656 433.71,-656 433.71,-650 439.71,-644 445.71,-644 445.71,-644 686.71,-644 686.71,-644 692.71,-644 698.71,-650 698.71,-656 698.71,-656 698.71,-706 698.71,-706 698.71,-712 692.71,-718 686.71,-718"/>
+<text text-anchor="start" x="445.71" y="-700" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Book it this way</text>
+<text text-anchor="start" x="445.71" y="-685" font-family="Helvetica,sans-Serif" font-size="15.00">Dr. Kudsi or Dr. Vallina at their</text>
+<text text-anchor="start" x="445.71" y="-670" font-family="Helvetica,sans-Serif" font-size="15.00">own Duly General Surgery clinic</text>
+<text text-anchor="start" x="445.71" y="-655" font-family="Helvetica,sans-Serif" font-size="15.00">(DT)</text>
+</g>
+<!-- q4&#45;&gt;o_q4 -->
+<g id="edge12" class="edge">
+<title>q4&#45;&gt;o_q4</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M363.41,-681C383.71,-681 404.44,-681 424.5,-681"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="424.67,-684.15 433.67,-681 424.67,-677.85 424.67,-684.15"/>
+<text text-anchor="start" x="375.52" y="-687.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- q5 -->
+<g id="node14" class="node">
+<title>q5</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="368.27,-564 288.24,-599.85 128.17,-599.85 48.14,-564 128.17,-528.15 288.24,-528.15 368.27,-564"/>
+<text text-anchor="start" x="122.21" y="-568" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Colonoscopy or EGD</text>
+<text text-anchor="start" x="172.21" y="-553" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">consult?</text>
+</g>
+<!-- q4&#45;&gt;q5 -->
+<g id="edge13" class="edge">
+<title>q4&#45;&gt;q5</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M208.21,-655.61C208.21,-642.16 208.21,-625.05 208.21,-609.33"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="211.36,-609.27 208.21,-600.27 205.06,-609.27 211.36,-609.27"/>
+<text text-anchor="start" x="208.21" y="-618.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- o_q5 -->
+<g id="node15" class="node">
+<title>o_q5</title>
+<path fill="#e7f5e9" stroke="#3c8d45" stroke-width="1.4" d="M713.21,-601C713.21,-601 451.21,-601 451.21,-601 445.21,-601 439.21,-595 439.21,-589 439.21,-589 439.21,-539 439.21,-539 439.21,-533 445.21,-527 451.21,-527 451.21,-527 713.21,-527 713.21,-527 719.21,-527 725.21,-533 725.21,-539 725.21,-539 725.21,-589 725.21,-589 725.21,-595 719.21,-601 713.21,-601"/>
+<text text-anchor="start" x="451.21" y="-583" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Book it this way</text>
+<text text-anchor="start" x="451.21" y="-568" font-family="Helvetica,sans-Serif" font-size="15.00">Colonoscopy Screening path. Book</text>
+<text text-anchor="start" x="451.21" y="-553" font-family="Helvetica,sans-Serif" font-size="15.00">with the PA if one shows in the</text>
+<text text-anchor="start" x="451.21" y="-538" font-family="Helvetica,sans-Serif" font-size="15.00">decision tree</text>
+</g>
+<!-- q5&#45;&gt;o_q5 -->
+<g id="edge14" class="edge">
+<title>q5&#45;&gt;o_q5</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M368.44,-564C388.82,-564 409.62,-564 429.87,-564"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="430.13,-567.15 439.13,-564 430.13,-560.85 430.13,-567.15"/>
+<text text-anchor="start" x="380.72" y="-570.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- q6 -->
+<g id="node16" class="node">
+<title>q6</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="416.62,-454.5 312.41,-479.62 104,-479.62 -0.21,-454.5 104,-429.38 312.41,-429.38 416.62,-454.5"/>
+<text text-anchor="start" x="92.71" y="-452" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Wants a different surgeon?</text>
+</g>
+<!-- q5&#45;&gt;q6 -->
+<g id="edge15" class="edge">
+<title>q5&#45;&gt;q6</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M208.21,-528.1C208.21,-515.49 208.21,-501.31 208.21,-488.84"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="211.36,-488.7 208.21,-479.7 205.06,-488.7 211.36,-488.7"/>
+<text text-anchor="start" x="208.21" y="-501.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- o_q6 -->
+<g id="node17" class="node">
+<title>o_q6</title>
+<path fill="#e7f5e9" stroke="#3c8d45" stroke-width="1.4" d="M693.21,-484C693.21,-484 499.21,-484 499.21,-484 493.21,-484 487.21,-478 487.21,-472 487.21,-472 487.21,-437 487.21,-437 487.21,-431 493.21,-425 499.21,-425 499.21,-425 693.21,-425 693.21,-425 699.21,-425 705.21,-431 705.21,-437 705.21,-437 705.21,-472 705.21,-472 705.21,-478 699.21,-484 693.21,-484"/>
+<text text-anchor="start" x="499.21" y="-466" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Book it this way</text>
+<text text-anchor="start" x="499.21" y="-451" font-family="Helvetica,sans-Serif" font-size="15.00">Transfer of care is allowed</text>
+<text text-anchor="start" x="499.21" y="-436" font-family="Helvetica,sans-Serif" font-size="15.00">No approval needed</text>
+</g>
+<!-- q6&#45;&gt;o_q6 -->
+<g id="edge16" class="edge">
+<title>q6&#45;&gt;o_q6</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M416.69,-454.5C437.62,-454.5 458.32,-454.5 477.81,-454.5"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="477.98,-457.65 486.98,-454.5 477.98,-451.35 477.98,-457.65"/>
+<text text-anchor="start" x="428.81" y="-461.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- q7 -->
+<g id="node18" class="node">
+<title>q7</title>
+<path fill="#f2f8fd" stroke="#12305b" stroke-width="1.4" d="M345.71,-382C345.71,-382 70.71,-382 70.71,-382 64.71,-382 58.71,-376 58.71,-370 58.71,-370 58.71,-278 58.71,-278 58.71,-272 64.71,-266 70.71,-266 70.71,-266 345.71,-266 345.71,-266 351.71,-266 357.71,-272 357.71,-278 357.71,-278 357.71,-370 357.71,-370 357.71,-376 351.71,-382 345.71,-382"/>
+<text text-anchor="start" x="70.71" y="-364" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Anything else: new consult for a</text>
+<text text-anchor="start" x="70.71" y="-349" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">condition</text>
+<text text-anchor="start" x="70.71" y="-334" font-family="Helvetica,sans-Serif" font-size="15.00">Ask every decision&#45;tree question</text>
+<text text-anchor="start" x="70.71" y="-319" font-family="Helvetica,sans-Serif" font-size="15.00">Match the condition to a provider</text>
+<text text-anchor="start" x="70.71" y="-304" font-family="Helvetica,sans-Serif" font-size="15.00">on the Site Grid</text>
+<text text-anchor="start" x="70.71" y="-289" font-family="Helvetica,sans-Serif" font-size="15.00">No match: refer out</text>
+<text text-anchor="start" x="70.71" y="-276.4" font-family="Helvetica,sans-Serif" text-decoration="underline" font-size="12.00" fill="#1f5fa8">see provider rules below</text>
+</g>
+<!-- q6&#45;&gt;q7 -->
+<g id="edge17" class="edge">
+<title>q6&#45;&gt;q7</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M208.21,-429.33C208.21,-418.46 208.21,-405.04 208.21,-391.49"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="211.36,-391.12 208.21,-382.12 205.06,-391.12 211.36,-391.12"/>
+<text text-anchor="start" x="208.21" y="-399.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- fin -->
+<g id="node19" class="node">
+<title>fin</title>
+<path fill="#e7f5e9" stroke="#3c8d45" stroke-width="1.4" d="M337.71,-237C337.71,-237 78.71,-237 78.71,-237 72.71,-237 66.71,-231 66.71,-225 66.71,-225 66.71,-85 66.71,-85 66.71,-79 72.71,-73 78.71,-73 78.71,-73 337.71,-73 337.71,-73 343.71,-73 349.71,-79 349.71,-85 349.71,-85 349.71,-225 349.71,-225 349.71,-231 343.71,-237 337.71,-237"/>
+<text text-anchor="start" x="78.71" y="-219" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Finish the booking</text>
+<text text-anchor="start" x="78.71" y="-204" font-family="Helvetica,sans-Serif" font-size="15.00">Schedule from the order, or attach</text>
+<text text-anchor="start" x="78.71" y="-189" font-family="Helvetica,sans-Serif" font-size="15.00">the order or referral (Active</text>
+<text text-anchor="start" x="78.71" y="-174" font-family="Helvetica,sans-Serif" font-size="15.00">Request tab)</text>
+<text text-anchor="start" x="78.71" y="-159" font-family="Helvetica,sans-Serif" font-size="15.00">Confirm provider, location, new&#45;</text>
+<text text-anchor="start" x="78.71" y="-144" font-family="Helvetica,sans-Serif" font-size="15.00">patient status</text>
+<text text-anchor="start" x="78.71" y="-129" font-family="Helvetica,sans-Serif" font-size="15.00">Verify insurance; remind co&#45;pay or</text>
+<text text-anchor="start" x="78.71" y="-114" font-family="Helvetica,sans-Serif" font-size="15.00">balance</text>
+<text text-anchor="start" x="78.71" y="-99" font-family="Helvetica,sans-Serif" font-size="15.00">Review cancellation and late</text>
+<text text-anchor="start" x="78.71" y="-84" font-family="Helvetica,sans-Serif" font-size="15.00">policy (15&#45;min grace)</text>
+</g>
+<!-- q7&#45;&gt;fin -->
+<g id="edge18" class="edge">
+<title>q7&#45;&gt;fin</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M208.21,-266C208.21,-259.63 208.21,-253.03 208.21,-246.38"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="211.36,-246.29 208.21,-237.29 205.06,-246.29 211.36,-246.29"/>
+</g>
+<!-- l_back -->
+<g id="jump__step4__l_back" class="node">
+<title>l_back</title>
+<path fill="#ece9fa" stroke="#5a49b0" stroke-width="1.8" d="M332.21,-44C332.21,-44 84.21,-44 84.21,-44 78.21,-44 72.21,-38 72.21,-32 72.21,-32 72.21,-12 72.21,-12 72.21,-6 78.21,0 84.21,0 84.21,0 332.21,0 332.21,0 338.21,0 344.21,-6 344.21,-12 344.21,-12 344.21,-32 344.21,-32 344.21,-38 338.21,-44 332.21,-44"/>
+<text text-anchor="start" x="84.21" y="-26" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Go to Step 4 in the main flow</text>
+<text text-anchor="start" x="84.21" y="-11" font-family="Helvetica,sans-Serif" font-size="15.00">Recap and close the call</text>
+</g>
+<!-- fin&#45;&gt;l_back -->
+<g id="edge19" class="edge">
+<title>fin&#45;&gt;l_back</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M208.21,-72.9C208.21,-66.03 208.21,-59.4 208.21,-53.35"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="211.36,-53.34 208.21,-44.34 205.06,-53.34 211.36,-53.34"/>
+</g>
+</g>
+</svg>
+</div><details id="ins-rules"><summary>Insurance rules</summary><div class="in"><ul>
+ <li><b>Traditional Medicaid / HFS:</b> Duly does not participate, except a one-time hospital follow-up with a Duly surgeon or a global requirement.</li>
+ <li><b>External Medicaid:</b> surgeons do not accept it. Patients on Medicaid cannot be self-pay.</li>
+ <li><b>BCBS Blue Community:</b> General Surgery sees these patients only when the PCP is assigned with Duly.</li>
+ <li><b>Self-pay:</b> $150 deposit due at the appointment; the rest is billed.</li></ul></div></details>
+ <details id="provider-rules"><summary>New consult: provider rules to watch for</summary><div class="in"><ul>
+ <li>Match the condition to the "Will see / Will not see" lists on the Site Grid. If the provider does not see it, refer to one who does.</li>
+ <li>Dr. Siavelis is no longer available (last day 7/31/26): refer to Dr. Martirano or Dr. DeHaan.</li>
+ <li>Dr. Bradley's patients: send a TE to the Cancer Nurse Navigator (Carrie Erwin, with Michelle Jones covering) at 630-432-6680.</li>
+ <li>Dr. Mangat: no new patients for breast pain, family history of breast cancer or abnormal imaging. Refer to the High Risk Breast Center.</li>
+ <li>Dr. Klemine has two staff: Erica Olague for scheduling, Naty Mendoza for clinical questions.</li></ul></div></details>
+ <details><summary>Late and cancellation reminders</summary><div class="in"><ul><li>15-minute grace period. If a patient is running late, call the Reception extension with the ETA.</li><li>Do not put late notes in the appointment notes.</li><li>A sooner appointment: book the next available and send a TE to Reception Pool P 12179.</li></ul></div></details><p class="top"><a href="#top">Back to the top</a></p></section><section id="sec-plastic"><h2>Section 5: Plastic surgery visits</h2><p class="when">Use this when the patient wants a plastic surgery visit. Check the location first.</p><div class="chart" aria-label="Plastic surgery scheduling flow"><svg role="img"
+ viewBox="0.00 0.00 757.30 642.75" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(14.4 628.35)">
+<title>G</title>
+<!-- c0 -->
+<g id="node1" class="node">
+<title>c0</title>
+<path fill="#f2f8fd" stroke="#12305b" stroke-width="1.4" d="M311.5,-613.95C311.5,-613.95 141.5,-613.95 141.5,-613.95 135.5,-613.95 129.5,-607.95 129.5,-601.95 129.5,-601.95 129.5,-589.95 129.5,-589.95 129.5,-583.95 135.5,-577.95 141.5,-577.95 141.5,-577.95 311.5,-577.95 311.5,-577.95 317.5,-577.95 323.5,-583.95 323.5,-589.95 323.5,-589.95 323.5,-601.95 323.5,-601.95 323.5,-607.95 317.5,-613.95 311.5,-613.95"/>
+<text text-anchor="start" x="141.5" y="-593.45" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Plastic surgery visit</text>
+</g>
+<!-- d_loc -->
+<g id="node2" class="node">
+<title>d_loc</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="356.15,-523.64 291.32,-548.76 161.68,-548.76 96.85,-523.64 161.68,-498.51 291.32,-498.51 356.15,-523.64"/>
+<text text-anchor="start" x="159" y="-521.14" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Which location?</text>
+</g>
+<!-- c0&#45;&gt;d_loc -->
+<g id="edge1" class="edge">
+<title>c0&#45;&gt;d_loc</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M226.5,-577.93C226.5,-571.95 226.5,-565.01 226.5,-558.15"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="229.65,-557.94 226.5,-548.94 223.35,-557.94 229.65,-557.94"/>
+</g>
+<!-- x_w -->
+<g id="node3" class="node">
+<title>x_w</title>
+<path fill="#f5e8e8" stroke="#8e2f2f" stroke-width="1.4" d="M643,-545.64C643,-545.64 502,-545.64 502,-545.64 496,-545.64 490,-539.64 490,-533.64 490,-533.64 490,-513.64 490,-513.64 490,-507.64 496,-501.64 502,-501.64 502,-501.64 643,-501.64 643,-501.64 649,-501.64 655,-507.64 655,-513.64 655,-513.64 655,-533.64 655,-533.64 655,-539.64 649,-545.64 643,-545.64"/>
+<text text-anchor="start" x="502" y="-527.64" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Deny scheduling</text>
+<text text-anchor="start" x="502" y="-512.64" font-family="Helvetica,sans-Serif" font-size="15.00">Warrenville</text>
+</g>
+<!-- d_loc&#45;&gt;x_w -->
+<g id="edge2" class="edge">
+<title>d_loc&#45;&gt;x_w</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M356.32,-523.64C397.77,-523.64 442.76,-523.64 480.9,-523.64"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="480.94,-526.79 489.94,-523.64 480.94,-520.49 480.94,-526.79"/>
+<text text-anchor="start" x="368.66" y="-530.44" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Warrenville &#160;</text>
+</g>
+<!-- d_rsn -->
+<g id="node4" class="node">
+<title>d_rsn</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="388.97,-419.4 307.73,-455.25 145.27,-455.25 64.03,-419.4 145.27,-383.55 307.73,-383.55 388.97,-419.4"/>
+<text text-anchor="start" x="139" y="-423.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Is the reason for the</text>
+<text text-anchor="start" x="162.5" y="-408.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">visit cosmetic?</text>
+</g>
+<!-- d_loc&#45;&gt;d_rsn -->
+<g id="edge3" class="edge">
+<title>d_loc&#45;&gt;d_rsn</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M226.5,-498.41C226.5,-488.25 226.5,-476.11 226.5,-464.47"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="229.65,-464.29 226.5,-455.29 223.35,-464.29 229.65,-464.29"/>
+<text text-anchor="start" x="226.5" y="-473.13" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Schaumburg &#160;</text>
+</g>
+<!-- x_c -->
+<g id="node5" class="node">
+<title>x_c</title>
+<path fill="#f5e8e8" stroke="#8e2f2f" stroke-width="1.4" d="M612,-441.4C612,-441.4 471,-441.4 471,-441.4 465,-441.4 459,-435.4 459,-429.4 459,-429.4 459,-409.4 459,-409.4 459,-403.4 465,-397.4 471,-397.4 471,-397.4 612,-397.4 612,-397.4 618,-397.4 624,-403.4 624,-409.4 624,-409.4 624,-429.4 624,-429.4 624,-435.4 618,-441.4 612,-441.4"/>
+<text text-anchor="start" x="471" y="-423.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Deny scheduling</text>
+<text text-anchor="start" x="471" y="-408.4" font-family="Helvetica,sans-Serif" font-size="15.00">Cosmetic</text>
+</g>
+<!-- d_rsn&#45;&gt;x_c -->
+<g id="edge4" class="edge">
+<title>d_rsn&#45;&gt;x_c</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M389.07,-419.4C409.89,-419.4 430.58,-419.4 449.71,-419.4"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="449.96,-422.55 458.96,-419.4 449.96,-416.25 449.96,-422.55"/>
+<text text-anchor="start" x="400.99" y="-426.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- d_seen -->
+<g id="node6" class="node">
+<title>d_seen</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="388.33,-304.55 307.42,-340.4 145.58,-340.4 64.67,-304.55 145.58,-268.7 307.42,-268.7 388.33,-304.55"/>
+<text text-anchor="start" x="139.5" y="-308.55" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Seen by Duly Plastic</text>
+<text text-anchor="start" x="157.5" y="-293.55" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Surgery before?</text>
+</g>
+<!-- d_rsn&#45;&gt;d_seen -->
+<g id="edge5" class="edge">
+<title>d_rsn&#45;&gt;d_seen</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M226.5,-383.31C226.5,-372.7 226.5,-360.9 226.5,-349.77"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="229.65,-349.62 226.5,-340.62 223.35,-349.62 229.65,-349.62"/>
+<text text-anchor="start" x="226.5" y="-358.27" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- o_fu -->
+<g id="node7" class="node">
+<title>o_fu</title>
+<path fill="#e7f5e9" stroke="#3c8d45" stroke-width="1.4" d="M716.5,-322.55C716.5,-322.55 470.5,-322.55 470.5,-322.55 464.5,-322.55 458.5,-316.55 458.5,-310.55 458.5,-310.55 458.5,-298.55 458.5,-298.55 458.5,-292.55 464.5,-286.55 470.5,-286.55 470.5,-286.55 716.5,-286.55 716.5,-286.55 722.5,-286.55 728.5,-292.55 728.5,-298.55 728.5,-298.55 728.5,-310.55 728.5,-310.55 728.5,-316.55 722.5,-322.55 716.5,-322.55"/>
+<text text-anchor="start" x="470.5" y="-302.05" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Book the follow&#45;up visit type</text>
+</g>
+<!-- d_seen&#45;&gt;o_fu -->
+<g id="edge6" class="edge">
+<title>d_seen&#45;&gt;o_fu</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M388.27,-304.55C408.6,-304.55 429.29,-304.55 449.33,-304.55"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="449.48,-307.7 458.48,-304.55 449.48,-301.4 449.48,-307.7"/>
+<text text-anchor="start" x="400.33" y="-311.35" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- d_pt -->
+<g id="node8" class="node">
+<title>d_pt</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="430.75,-200.31 328.62,-225.44 124.38,-225.44 22.25,-200.31 124.38,-175.19 328.62,-175.19 430.75,-200.31"/>
+<text text-anchor="start" x="113.5" y="-197.81" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">What type of new patient?</text>
+</g>
+<!-- d_seen&#45;&gt;d_pt -->
+<g id="edge7" class="edge">
+<title>d_seen&#45;&gt;d_pt</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M226.5,-268.65C226.5,-257.73 226.5,-245.72 226.5,-234.89"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="229.65,-234.74 226.5,-225.74 223.35,-234.74 229.65,-234.74"/>
+<text text-anchor="start" x="226.5" y="-243.42" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- o_new -->
+<g id="node9" class="node">
+<title>o_new</title>
+<path fill="#e7f5e9" stroke="#3c8d45" stroke-width="1.4" d="M297,-124.5C297,-124.5 12,-124.5 12,-124.5 6,-124.5 0,-118.5 0,-112.5 0,-112.5 0,-92.5 0,-92.5 0,-86.5 6,-80.5 12,-80.5 12,-80.5 297,-80.5 297,-80.5 303,-80.5 309,-86.5 309,-92.5 309,-92.5 309,-112.5 309,-112.5 309,-118.5 303,-124.5 297,-124.5"/>
+<text text-anchor="start" x="12" y="-106.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Book &quot;New PT: Specialty Consult&quot;</text>
+<text text-anchor="start" x="12" y="-91.5" font-family="Helvetica,sans-Serif" font-size="15.00">(new patient)</text>
+</g>
+<!-- d_pt&#45;&gt;o_new -->
+<g id="edge8" class="edge">
+<title>d_pt&#45;&gt;o_new</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M208.33,-175.13C198.49,-162.04 186.27,-145.78 175.96,-132.06"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="178.38,-130.04 170.46,-124.73 173.35,-133.82 178.38,-130.04"/>
+<text text-anchor="start" x="197.5" y="-149.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;New patient &#160;</text>
+</g>
+<!-- o_med -->
+<g id="node10" class="node">
+<title>o_med</title>
+<path fill="#e7f5e9" stroke="#3c8d45" stroke-width="1.4" d="M578.5,-132C578.5,-132 346.5,-132 346.5,-132 340.5,-132 334.5,-126 334.5,-120 334.5,-120 334.5,-85 334.5,-85 334.5,-79 340.5,-73 346.5,-73 346.5,-73 578.5,-73 578.5,-73 584.5,-73 590.5,-79 590.5,-85 590.5,-85 590.5,-120 590.5,-120 590.5,-126 584.5,-132 578.5,-132"/>
+<text text-anchor="start" x="346.5" y="-114" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Book the Internal Specialty</text>
+<text text-anchor="start" x="346.5" y="-99" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">visit</text>
+<text text-anchor="start" x="346.5" y="-84" font-family="Helvetica,sans-Serif" font-size="15.00">(Medicaid, internal)</text>
+</g>
+<!-- d_pt&#45;&gt;o_med -->
+<g id="edge9" class="edge">
+<title>d_pt&#45;&gt;o_med</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M286.05,-175.13C315.63,-163.12 351.77,-148.45 383.62,-135.52"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="384.9,-138.4 392.05,-132.1 382.53,-132.57 384.9,-138.4"/>
+<text text-anchor="start" x="351.5" y="-149.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Medicaid (internal) &#160;</text>
+</g>
+<!-- l_fin -->
+<g id="jump__sec&#45;visit__l_fin" class="node">
+<title>l_fin</title>
+<path fill="#ece9fa" stroke="#5a49b0" stroke-width="1.8" d="M579.5,-44C579.5,-44 345.5,-44 345.5,-44 339.5,-44 333.5,-38 333.5,-32 333.5,-32 333.5,-12 333.5,-12 333.5,-6 339.5,0 345.5,0 345.5,0 579.5,0 579.5,0 585.5,0 591.5,-6 591.5,-12 591.5,-12 591.5,-32 591.5,-32 591.5,-38 585.5,-44 579.5,-44"/>
+<text text-anchor="start" x="345.5" y="-26" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Go to the booking checklist</text>
+<text text-anchor="start" x="345.5" y="-11" font-family="Helvetica,sans-Serif" font-size="15.00">Section 4: Finish the booking</text>
+</g>
+<!-- o_med&#45;&gt;l_fin -->
+<g id="edge10" class="edge">
+<title>o_med&#45;&gt;l_fin</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M462.5,-72.72C462.5,-66.36 462.5,-59.62 462.5,-53.22"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="465.65,-53.16 462.5,-44.16 459.35,-53.16 465.65,-53.16"/>
+</g>
+</g>
+</svg>
+</div><p class="note">Source: Plastic Surgery decision tree (4/24/26). Some labels were cut off in the screenshot, so confirm the exact visit-type names in Epic.</p><p class="top"><a href="#top">Back to the top</a></p></section><section id="sec-page"><h2>Section 6: Send the page in PerfectServe</h2><p class="when">Follow these steps every time you page. Never skip a field.</p><div class="chart" aria-label="Steps to send a page"><svg role="img"
+ viewBox="0.00 0.00 732.30 1080.15" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(14.4 1065.75)">
+<title>G</title>
+<!-- p1 -->
+<g id="node1" class="node">
+<title>p1</title>
+<path fill="#f2f8fd" stroke="#12305b" stroke-width="1.4" d="M302,-1051.35C302,-1051.35 54,-1051.35 54,-1051.35 48,-1051.35 42,-1045.35 42,-1039.35 42,-1039.35 42,-1004.35 42,-1004.35 42,-998.35 48,-992.35 54,-992.35 54,-992.35 302,-992.35 302,-992.35 308,-992.35 314,-998.35 314,-1004.35 314,-1004.35 314,-1039.35 314,-1039.35 314,-1045.35 308,-1051.35 302,-1051.35"/>
+<text text-anchor="start" x="54" y="-1033.35" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Sign in to PerfectServe</text>
+<text text-anchor="start" x="54" y="-1018.35" font-family="Helvetica,sans-Serif" font-size="15.00">Duly email and password; 4&#45;digit</text>
+<text text-anchor="start" x="54" y="-1003.35" font-family="Helvetica,sans-Serif" font-size="15.00">PIN</text>
+</g>
+<!-- p2 -->
+<g id="node2" class="node">
+<title>p2</title>
+<path fill="#f2f8fd" stroke="#12305b" stroke-width="1.4" d="M301.5,-963.35C301.5,-963.35 54.5,-963.35 54.5,-963.35 48.5,-963.35 42.5,-957.35 42.5,-951.35 42.5,-951.35 42.5,-916.35 42.5,-916.35 42.5,-910.35 48.5,-904.35 54.5,-904.35 54.5,-904.35 301.5,-904.35 301.5,-904.35 307.5,-904.35 313.5,-910.35 313.5,-916.35 313.5,-916.35 313.5,-951.35 313.5,-951.35 313.5,-957.35 307.5,-963.35 301.5,-963.35"/>
+<text text-anchor="start" x="54.5" y="-945.35" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Open a new message</text>
+<text text-anchor="start" x="54.5" y="-930.35" font-family="Helvetica,sans-Serif" font-size="15.00">Conversations tab, then the blue</text>
+<text text-anchor="start" x="54.5" y="-915.35" font-family="Helvetica,sans-Serif" font-size="15.00">pen&#45;and&#45;paper icon</text>
+</g>
+<!-- p1&#45;&gt;p2 -->
+<g id="edge1" class="edge">
+<title>p1&#45;&gt;p2</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M178,-992.21C178,-985.97 178,-979.28 178,-972.75"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="181.15,-972.36 178,-963.36 174.85,-972.36 181.15,-972.36"/>
+</g>
+<!-- p3 -->
+<g id="node3" class="node">
+<title>p3</title>
+<path fill="#f2f8fd" stroke="#12305b" stroke-width="1.4" d="M309,-875.35C309,-875.35 47,-875.35 47,-875.35 41,-875.35 35,-869.35 35,-863.35 35,-863.35 35,-813.35 35,-813.35 35,-807.35 41,-801.35 47,-801.35 47,-801.35 309,-801.35 309,-801.35 315,-801.35 321,-807.35 321,-813.35 321,-813.35 321,-863.35 321,-863.35 321,-869.35 315,-875.35 309,-875.35"/>
+<text text-anchor="start" x="47" y="-857.35" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Search and select the provider</text>
+<text text-anchor="start" x="47" y="-842.35" font-family="Helvetica,sans-Serif" font-size="15.00">Type a name, specialty or practice</text>
+<text text-anchor="start" x="47" y="-827.35" font-family="Helvetica,sans-Serif" font-size="15.00">Check the first name: some</text>
+<text text-anchor="start" x="47" y="-812.35" font-family="Helvetica,sans-Serif" font-size="15.00">providers share a last name</text>
+</g>
+<!-- p2&#45;&gt;p3 -->
+<g id="edge2" class="edge">
+<title>p2&#45;&gt;p3</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M178,-904.29C178,-898.08 178,-891.37 178,-884.7"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="181.15,-884.68 178,-875.68 174.85,-884.68 181.15,-884.68"/>
+</g>
+<!-- p4 -->
+<g id="node4" class="node">
+<title>p4</title>
+<path fill="#f2f8fd" stroke="#12305b" stroke-width="1.4" d="M304,-772.35C304,-772.35 52,-772.35 52,-772.35 46,-772.35 40,-766.35 40,-760.35 40,-760.35 40,-650.35 40,-650.35 40,-644.35 46,-638.35 52,-638.35 52,-638.35 304,-638.35 304,-638.35 310,-638.35 316,-644.35 316,-650.35 316,-650.35 316,-760.35 316,-760.35 316,-766.35 310,-772.35 304,-772.35"/>
+<text text-anchor="start" x="52" y="-754.35" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Answer every prompt</text>
+<text text-anchor="start" x="52" y="-739.35" font-family="Helvetica,sans-Serif" font-size="15.00">Examples: patient call or hospital</text>
+<text text-anchor="start" x="52" y="-724.35" font-family="Helvetica,sans-Serif" font-size="15.00">call?</text>
+<text text-anchor="start" x="52" y="-709.35" font-family="Helvetica,sans-Serif" font-size="15.00">New consult or established</text>
+<text text-anchor="start" x="52" y="-694.35" font-family="Helvetica,sans-Serif" font-size="15.00">patient?</text>
+<text text-anchor="start" x="52" y="-679.35" font-family="Helvetica,sans-Serif" font-size="15.00">Hospital inpatient? Where is the</text>
+<text text-anchor="start" x="52" y="-664.35" font-family="Helvetica,sans-Serif" font-size="15.00">patient? (choose Other for an</text>
+<text text-anchor="start" x="52" y="-649.35" font-family="Helvetica,sans-Serif" font-size="15.00">outpatient)</text>
+</g>
+<!-- p3&#45;&gt;p4 -->
+<g id="edge3" class="edge">
+<title>p3&#45;&gt;p4</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M178,-801.2C178,-795.06 178,-788.48 178,-781.76"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="181.15,-781.53 178,-772.53 174.85,-781.53 181.15,-781.53"/>
+</g>
+<!-- p5 -->
+<g id="node5" class="node">
+<title>p5</title>
+<path fill="#f2f8fd" stroke="#12305b" stroke-width="1.4" d="M295.5,-609.35C295.5,-609.35 60.5,-609.35 60.5,-609.35 54.5,-609.35 48.5,-603.35 48.5,-597.35 48.5,-597.35 48.5,-585.35 48.5,-585.35 48.5,-579.35 54.5,-573.35 60.5,-573.35 60.5,-573.35 295.5,-573.35 295.5,-573.35 301.5,-573.35 307.5,-579.35 307.5,-585.35 307.5,-585.35 307.5,-597.35 307.5,-597.35 307.5,-603.35 301.5,-609.35 295.5,-609.35"/>
+<text text-anchor="start" x="60.5" y="-588.85" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Choose the priority: Urgent</text>
+</g>
+<!-- p4&#45;&gt;p5 -->
+<g id="edge4" class="edge">
+<title>p4&#45;&gt;p5</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M178,-638.22C178,-631.43 178,-624.84 178,-618.87"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="181.15,-618.49 178,-609.49 174.85,-618.49 181.15,-618.49"/>
+</g>
+<!-- d_cov -->
+<g id="node6" class="node">
+<title>d_cov</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="355.99,-496.17 266.99,-544.52 89,-544.52 0,-496.17 89,-447.83 266.99,-447.83 355.99,-496.17"/>
+<text text-anchor="start" x="81" y="-507.67" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Does PerfectServe say</text>
+<text text-anchor="start" x="104" y="-492.67" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">another doctor is</text>
+<text text-anchor="start" x="136.5" y="-477.67" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">covering?</text>
+</g>
+<!-- p5&#45;&gt;d_cov -->
+<g id="edge5" class="edge">
+<title>p5&#45;&gt;d_cov</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M178,-573.26C178,-567.49 178,-560.71 178,-553.6"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="181.15,-553.48 178,-544.48 174.85,-553.49 181.15,-553.48"/>
+</g>
+<!-- p_cov -->
+<g id="node7" class="node">
+<title>p_cov</title>
+<path fill="#fde9e6" stroke="#c0392b" stroke-width="1.8" d="M691.5,-525.67C691.5,-525.67 438.5,-525.67 438.5,-525.67 432.5,-525.67 426.5,-519.67 426.5,-513.67 426.5,-513.67 426.5,-478.67 426.5,-478.67 426.5,-472.67 432.5,-466.67 438.5,-466.67 438.5,-466.67 691.5,-466.67 691.5,-466.67 697.5,-466.67 703.5,-472.67 703.5,-478.67 703.5,-478.67 703.5,-513.67 703.5,-513.67 703.5,-519.67 697.5,-525.67 691.5,-525.67"/>
+<text text-anchor="start" x="438.5" y="-507.67" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Choose the ON&#45;CALL provider</text>
+<text text-anchor="start" x="438.5" y="-492.67" font-family="Helvetica,sans-Serif" font-size="15.00">Never choose &quot;Override the call</text>
+<text text-anchor="start" x="438.5" y="-477.67" font-family="Helvetica,sans-Serif" font-size="15.00">schedule&quot;</text>
+</g>
+<!-- d_cov&#45;&gt;p_cov -->
+<g id="edge6" class="edge">
+<title>d_cov&#45;&gt;p_cov</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M356.2,-496.17C376.59,-496.17 397.2,-496.17 417.13,-496.17"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="417.24,-499.32 426.24,-496.17 417.24,-493.02 417.24,-499.32"/>
+<text text-anchor="start" x="368.24" y="-502.97" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- p6 -->
+<g id="node8" class="node">
+<title>p6</title>
+<path fill="#f2f8fd" stroke="#12305b" stroke-width="1.4" d="M501.5,-405C501.5,-405 240.5,-405 240.5,-405 234.5,-405 228.5,-399 228.5,-393 228.5,-393 228.5,-381 228.5,-381 228.5,-375 234.5,-369 240.5,-369 240.5,-369 501.5,-369 501.5,-369 507.5,-369 513.5,-375 513.5,-381 513.5,-381 513.5,-393 513.5,-393 513.5,-399 507.5,-405 501.5,-405"/>
+<text text-anchor="start" x="240.5" y="-384.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Choose &quot;Send a text message&quot;</text>
+</g>
+<!-- d_cov&#45;&gt;p6 -->
+<g id="edge7" class="edge">
+<title>d_cov&#45;&gt;p6</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M263.21,-447.85C287.35,-434.45 312.45,-420.51 332.34,-409.46"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="333.92,-412.19 340.25,-405.07 330.86,-406.69 333.92,-412.19"/>
+<text text-anchor="start" x="314" y="-422.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- p_cov&#45;&gt;p6 -->
+<g id="edge8" class="edge">
+<title>p_cov&#45;&gt;p6</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M513.26,-466.59C480.84,-448.68 439.72,-425.97 410.04,-409.57"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="411.39,-406.71 401.99,-405.12 408.34,-412.23 411.39,-406.71"/>
+</g>
+<!-- p7 -->
+<g id="node9" class="node">
+<title>p7</title>
+<path fill="#f2f8fd" stroke="#12305b" stroke-width="1.4" d="M491.5,-340C491.5,-340 250.5,-340 250.5,-340 244.5,-340 238.5,-334 238.5,-328 238.5,-328 238.5,-173 238.5,-173 238.5,-167 244.5,-161 250.5,-161 250.5,-161 491.5,-161 491.5,-161 497.5,-161 503.5,-167 503.5,-173 503.5,-173 503.5,-328 503.5,-328 503.5,-334 497.5,-340 491.5,-340"/>
+<text text-anchor="start" x="250.5" y="-322" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Fill in the message form</text>
+<text text-anchor="start" x="250.5" y="-307" font-family="Helvetica,sans-Serif" font-size="15.00">Callback number, caller name,</text>
+<text text-anchor="start" x="250.5" y="-292" font-family="Helvetica,sans-Serif" font-size="15.00">patient name, DOB</text>
+<text text-anchor="start" x="250.5" y="-277" font-family="Helvetica,sans-Serif" font-size="15.00">Hospital/facility, floor/room #,</text>
+<text text-anchor="start" x="250.5" y="-262" font-family="Helvetica,sans-Serif" font-size="15.00">treating physician</text>
+<text text-anchor="start" x="250.5" y="-247" font-family="Helvetica,sans-Serif" font-size="15.00">Reason for call: type the GE</text>
+<text text-anchor="start" x="250.5" y="-232" font-family="Helvetica,sans-Serif" font-size="15.00">number first</text>
+<text text-anchor="start" x="250.5" y="-217" font-family="Helvetica,sans-Serif" font-size="15.00">If the caller cannot give a field,</text>
+<text text-anchor="start" x="250.5" y="-202" font-family="Helvetica,sans-Serif" font-size="15.00">type &quot;not given&quot;</text>
+<text text-anchor="start" x="250.5" y="-187" font-family="Helvetica,sans-Serif" font-size="15.00">Check spelling against Epic and</text>
+<text text-anchor="start" x="250.5" y="-172" font-family="Helvetica,sans-Serif" font-size="15.00">the callback number</text>
+</g>
+<!-- p6&#45;&gt;p7 -->
+<g id="edge9" class="edge">
+<title>p6&#45;&gt;p7</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M371,-368.97C371,-363.4 371,-356.77 371,-349.53"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="374.15,-349.07 371,-340.07 367.85,-349.07 374.15,-349.07"/>
+</g>
+<!-- p8 -->
+<g id="node10" class="node">
+<title>p8</title>
+<path fill="#f2f8fd" stroke="#12305b" stroke-width="1.4" d="M492,-132C492,-132 250,-132 250,-132 244,-132 238,-126 238,-120 238,-120 238,-85 238,-85 238,-79 244,-73 250,-73 250,-73 492,-73 492,-73 498,-73 504,-79 504,-85 504,-85 504,-120 504,-120 504,-126 498,-132 492,-132"/>
+<text text-anchor="start" x="250" y="-114" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Click Send message</text>
+<text text-anchor="start" x="250" y="-99" font-family="Helvetica,sans-Serif" font-size="15.00">Check the time stamp and read</text>
+<text text-anchor="start" x="250" y="-84" font-family="Helvetica,sans-Serif" font-size="15.00">status in the conversation inbox</text>
+</g>
+<!-- p7&#45;&gt;p8 -->
+<g id="edge10" class="edge">
+<title>p7&#45;&gt;p8</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M371,-160.78C371,-154.04 371,-147.49 371,-141.37"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="374.15,-141.15 371,-132.15 367.85,-141.15 374.15,-141.15"/>
+</g>
+<!-- l_af -->
+<g id="jump__sec&#45;after__l_af" class="node">
+<title>l_af</title>
+<path fill="#ece9fa" stroke="#5a49b0" stroke-width="1.8" d="M469.5,-44C469.5,-44 272.5,-44 272.5,-44 266.5,-44 260.5,-38 260.5,-32 260.5,-32 260.5,-12 260.5,-12 260.5,-6 266.5,0 272.5,0 272.5,0 469.5,0 469.5,0 475.5,0 481.5,-6 481.5,-12 481.5,-12 481.5,-32 481.5,-32 481.5,-38 475.5,-44 469.5,-44"/>
+<text text-anchor="start" x="272.5" y="-26" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Go to Section 7</text>
+<text text-anchor="start" x="272.5" y="-11" font-family="Helvetica,sans-Serif" font-size="15.00">What to do after you page</text>
+</g>
+<!-- p8&#45;&gt;l_af -->
+<g id="edge11" class="edge">
+<title>p8&#45;&gt;l_af</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M371,-72.72C371,-66.36 371,-59.62 371,-53.22"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="374.15,-53.16 371,-44.16 367.85,-53.16 374.15,-53.16"/>
+</g>
+</g>
+</svg>
+</div><div class="note"><b>Before you click send:</b> put the patient's GE number first in the Reason for Call, double-check spelling against Epic, and check the callback number.</div>
+ <details><summary>Page the right person</summary><div class="in"><ul><li>Patient calls and lab critical results: type the provider the patient sees. Never override the call schedule; if someone else is covering, page them.</li><li>Hospital calls: type the specialty or department name and follow the prompts.</li><li>You can page by provider name, specialty or practice.</li><li>If the system asks, choose the on-call provider. Never choose the override option.</li></ul></div></details><p class="top"><a href="#top">Back to the top</a></p></section><section id="sec-after"><h2>Section 7: After you page</h2><p class="when">Tell the patient what to expect, and know what to do if the page is not answered.</p><div class="chart" aria-label="After the page and unacknowledged pages"><svg role="img"
+ viewBox="0.00 0.00 694.58 726.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(14.4 711.6)">
+<title>G</title>
+<!-- a1 -->
+<g id="node1" class="node">
+<title>a1</title>
+<path fill="#f2f8fd" stroke="#12305b" stroke-width="1.4" d="M293.28,-697.2C293.28,-697.2 51.28,-697.2 51.28,-697.2 45.28,-697.2 39.28,-691.2 39.28,-685.2 39.28,-685.2 39.28,-575.2 39.28,-575.2 39.28,-569.2 45.28,-563.2 51.28,-563.2 51.28,-563.2 293.28,-563.2 293.28,-563.2 299.28,-563.2 305.28,-569.2 305.28,-575.2 305.28,-575.2 305.28,-685.2 305.28,-685.2 305.28,-691.2 299.28,-697.2 293.28,-697.2"/>
+<text text-anchor="start" x="51.28" y="-679.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Tell the patient</text>
+<text text-anchor="start" x="51.28" y="-664.2" font-family="Helvetica,sans-Serif" font-size="15.00">Which provider is on call</text>
+<text text-anchor="start" x="51.28" y="-649.2" font-family="Helvetica,sans-Serif" font-size="15.00">They should get a call within 30</text>
+<text text-anchor="start" x="51.28" y="-634.2" font-family="Helvetica,sans-Serif" font-size="15.00">minutes</text>
+<text text-anchor="start" x="51.28" y="-619.2" font-family="Helvetica,sans-Serif" font-size="15.00">The call may show as blocked or</text>
+<text text-anchor="start" x="51.28" y="-604.2" font-family="Helvetica,sans-Serif" font-size="15.00">private: they must answer it</text>
+<text text-anchor="start" x="51.28" y="-589.2" font-family="Helvetica,sans-Serif" font-size="15.00">No call in 60 minutes? Call us</text>
+<text text-anchor="start" x="51.28" y="-574.2" font-family="Helvetica,sans-Serif" font-size="15.00">back</text>
+</g>
+<!-- d_cb -->
+<g id="node2" class="node">
+<title>d_cb</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="344.34,-498.27 258.31,-534.12 86.25,-534.12 0.22,-498.27 86.25,-462.42 258.31,-462.42 344.34,-498.27"/>
+<text text-anchor="start" x="81.28" y="-502.27" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Patient calls back: no</text>
+<text text-anchor="start" x="78.78" y="-487.27" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">call after 60 minutes?</text>
+</g>
+<!-- a1&#45;&gt;d_cb -->
+<g id="edge1" class="edge">
+<title>a1&#45;&gt;d_cb</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M172.28,-563.09C172.28,-556.44 172.28,-549.8 172.28,-543.46"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="175.43,-543.41 172.28,-534.41 169.13,-543.41 175.43,-543.41"/>
+</g>
+<!-- a_ok -->
+<g id="node3" class="node">
+<title>a_ok</title>
+<path fill="#e7f5e9" stroke="#3c8d45" stroke-width="1.4" d="M653.28,-527.77C653.28,-527.77 421.28,-527.77 421.28,-527.77 415.28,-527.77 409.28,-521.77 409.28,-515.77 409.28,-515.77 409.28,-480.77 409.28,-480.77 409.28,-474.77 415.28,-468.77 421.28,-468.77 421.28,-468.77 653.28,-468.77 653.28,-468.77 659.28,-468.77 665.28,-474.77 665.28,-480.77 665.28,-480.77 665.28,-515.77 665.28,-515.77 665.28,-521.77 659.28,-527.77 653.28,-527.77"/>
+<text text-anchor="start" x="421.28" y="-509.77" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Nothing more to do</text>
+<text text-anchor="start" x="421.28" y="-494.77" font-family="Helvetica,sans-Serif" font-size="15.00">Continue to Step 4 of the main</text>
+<text text-anchor="start" x="421.28" y="-479.77" font-family="Helvetica,sans-Serif" font-size="15.00">flow</text>
+</g>
+<!-- d_cb&#45;&gt;a_ok -->
+<g id="edge2" class="edge">
+<title>d_cb&#45;&gt;a_ok</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M344.36,-498.27C362.92,-498.27 381.63,-498.27 399.71,-498.27"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="400.11,-501.42 409.11,-498.27 400.11,-495.12 400.11,-501.42"/>
+<text text-anchor="start" x="356.92" y="-505.07" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- a2 -->
+<g id="node4" class="node">
+<title>a2</title>
+<path fill="#fde9e6" stroke="#c0392b" stroke-width="1.8" d="M308.28,-419.35C308.28,-419.35 36.28,-419.35 36.28,-419.35 30.28,-419.35 24.28,-413.35 24.28,-407.35 24.28,-407.35 24.28,-372.35 24.28,-372.35 24.28,-366.35 30.28,-360.35 36.28,-360.35 36.28,-360.35 308.28,-360.35 308.28,-360.35 314.28,-360.35 320.28,-366.35 320.28,-372.35 320.28,-372.35 320.28,-407.35 320.28,-407.35 320.28,-413.35 314.28,-419.35 308.28,-419.35"/>
+<text text-anchor="start" x="36.28" y="-401.35" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Start the Unacknowledged Page</text>
+<text text-anchor="start" x="36.28" y="-386.35" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Process</text>
+<text text-anchor="start" x="36.28" y="-371.35" font-family="Helvetica,sans-Serif" font-size="15.00">Contact your supervisor</text>
+</g>
+<!-- d_cb&#45;&gt;a2 -->
+<g id="edge3" class="edge">
+<title>d_cb&#45;&gt;a2</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M172.28,-462.13C172.28,-451.45 172.28,-439.67 172.28,-428.82"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="175.43,-428.57 172.28,-419.57 169.13,-428.57 175.43,-428.57"/>
+<text text-anchor="start" x="172.28" y="-437.15" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- d_st -->
+<g id="node5" class="node">
+<title>d_st</title>
+<polygon fill="#fff3d1" stroke="#c58b1b" stroke-width="1.4" points="329.95,-283.17 251.11,-331.52 93.45,-331.52 14.61,-283.17 93.45,-234.83 251.11,-234.83 329.95,-283.17"/>
+<text text-anchor="start" x="99.28" y="-294.67" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Does it still need</text>
+<text text-anchor="start" x="87.78" y="-279.67" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">escalation after the</text>
+<text text-anchor="start" x="122.28" y="-264.67" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">supervisor?</text>
+</g>
+<!-- a2&#45;&gt;d_st -->
+<g id="edge4" class="edge">
+<title>a2&#45;&gt;d_st</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M172.28,-360.24C172.28,-354.17 172.28,-347.55 172.28,-340.84"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="175.43,-340.67 172.28,-331.67 169.13,-340.67 175.43,-340.67"/>
+</g>
+<!-- a3 -->
+<g id="node6" class="node">
+<title>a3</title>
+<path fill="#f2f8fd" stroke="#12305b" stroke-width="1.4" d="M653.78,-312.67C653.78,-312.67 412.78,-312.67 412.78,-312.67 406.78,-312.67 400.78,-306.67 400.78,-300.67 400.78,-300.67 400.78,-265.67 400.78,-265.67 400.78,-259.67 406.78,-253.67 412.78,-253.67 412.78,-253.67 653.78,-253.67 653.78,-253.67 659.78,-253.67 665.78,-259.67 665.78,-265.67 665.78,-265.67 665.78,-300.67 665.78,-300.67 665.78,-306.67 659.78,-312.67 653.78,-312.67"/>
+<text text-anchor="start" x="412.78" y="-294.67" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Email Kylee Seiffert</text>
+<text text-anchor="start" x="412.78" y="-279.67" font-family="Helvetica,sans-Serif" font-size="15.00">Include the details and as many</text>
+<text text-anchor="start" x="412.78" y="-264.67" font-family="Helvetica,sans-Serif" font-size="15.00">screenshots as you can</text>
+</g>
+<!-- d_st&#45;&gt;a3 -->
+<g id="edge5" class="edge">
+<title>d_st&#45;&gt;a3</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M330.1,-283.17C350.5,-283.17 371.29,-283.17 391.41,-283.17"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="391.61,-286.32 400.61,-283.17 391.61,-280.02 391.61,-286.32"/>
+<text text-anchor="start" x="342.32" y="-289.97" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;Yes &#160;</text>
+</g>
+<!-- a4 -->
+<g id="node7" class="node">
+<title>a4</title>
+<path fill="#f2f8fd" stroke="#12305b" stroke-width="1.4" d="M495.78,-192C495.78,-192 208.78,-192 208.78,-192 202.78,-192 196.78,-186 196.78,-180 196.78,-180 196.78,-85 196.78,-85 196.78,-79 202.78,-73 208.78,-73 208.78,-73 495.78,-73 495.78,-73 501.78,-73 507.78,-79 507.78,-85 507.78,-85 507.78,-180 507.78,-180 507.78,-186 501.78,-192 495.78,-192"/>
+<text text-anchor="start" x="208.78" y="-174" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">After the concern is handled:</text>
+<text text-anchor="start" x="208.78" y="-159" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">submit an RL6</text>
+<text text-anchor="start" x="208.78" y="-144" font-family="Helvetica,sans-Serif" font-size="15.00">Report an Incident, then Contact</text>
+<text text-anchor="start" x="208.78" y="-129" font-family="Helvetica,sans-Serif" font-size="15.00">Center/After Hours</text>
+<text text-anchor="start" x="208.78" y="-114" font-family="Helvetica,sans-Serif" font-size="15.00">Concern, then Unacknowledged page,</text>
+<text text-anchor="start" x="208.78" y="-99" font-family="Helvetica,sans-Serif" font-size="15.00">then Outpatient (RL6 only tracks</text>
+<text text-anchor="start" x="208.78" y="-84" font-family="Helvetica,sans-Serif" font-size="15.00">the delay; it does not escalate)</text>
+</g>
+<!-- d_st&#45;&gt;a4 -->
+<g id="edge6" class="edge">
+<title>d_st&#45;&gt;a4</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M229.73,-234.72C243.79,-223.11 259.07,-210.49 273.92,-198.22"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="276.24,-200.39 281.17,-192.23 272.23,-195.53 276.24,-200.39"/>
+<text text-anchor="start" x="262.28" y="-209.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00" fill="#12305b"> &#160;No &#160;</text>
+</g>
+<!-- a3&#45;&gt;a4 -->
+<g id="edge7" class="edge">
+<title>a3&#45;&gt;a4</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M498.38,-253.51C479.12,-237.69 454.38,-217.36 430.74,-197.95"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="432.74,-195.51 423.78,-192.23 428.74,-200.38 432.74,-195.51"/>
+</g>
+<!-- l_b -->
+<g id="jump__step4__l_b" class="node">
+<title>l_b</title>
+<path fill="#ece9fa" stroke="#5a49b0" stroke-width="1.8" d="M476.28,-44C476.28,-44 228.28,-44 228.28,-44 222.28,-44 216.28,-38 216.28,-32 216.28,-32 216.28,-12 216.28,-12 216.28,-6 222.28,0 228.28,0 228.28,0 476.28,0 476.28,0 482.28,0 488.28,-6 488.28,-12 488.28,-12 488.28,-32 488.28,-32 488.28,-38 482.28,-44 476.28,-44"/>
+<text text-anchor="start" x="228.28" y="-26" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Go to Step 4 in the main flow</text>
+<text text-anchor="start" x="228.28" y="-11" font-family="Helvetica,sans-Serif" font-size="15.00">Recap and close the call</text>
+</g>
+<!-- a4&#45;&gt;l_b -->
+<g id="edge8" class="edge">
+<title>a4&#45;&gt;l_b</title>
+<path fill="none" stroke="#12305b" stroke-width="1.5" d="M352.28,-72.8C352.28,-66.12 352.28,-59.53 352.28,-53.43"/>
+<polygon fill="#12305b" stroke="#12305b" stroke-width="1.5" points="355.43,-53.33 352.28,-44.33 349.13,-53.33 355.43,-53.33"/>
+</g>
+</g>
+</svg>
+</div><details><summary>What goes in an RL6</summary><div class="in"><ul><li>MRN</li><li>Reason for page (medical concern or hotword)</li><li>Phone number called from</li><li>Time of page</li><li>Provider paged</li><li>Reason for the RL6 (for example unanswered, or multiple pages after 1 hour)</li><li>Established provider, if different from the provider paged</li><li>Whether a TE was sent to notify the provider</li></ul>
+ <p>Open it from the Compass home page: Report an Incident. Questions: riskmanagement@duly.com.</p></div></details><p class="top"><a href="#top">Back to the top</a></p></section><section id="sec-ref"><h2>Reference</h2><p class="when">Look things up here. You do not need to read this top to bottom.</p>
+<h3>Key places to send things</h3><div class="tbl"><table><tr><th>Destination</th><th>Use it for</th></tr>
+<tr><td>Surgery Scheduler Pool <b>P 12172</b></td><td>Surgery or procedure scheduling, rescheduling, cancelling and surgery questions. Cancellations are High Priority.</td></tr>
+<tr><td>Reception Pool <b>P 12179</b></td><td>Sooner appointments and provider location questions.</td></tr>
+<tr><td>West Clinical <b>P 12149</b> / South Clinical <b>P 12169</b></td><td>Non-urgent sick, symptom or medication calls, nurse requests, and hotword follow-up when no one answers.</td></tr>
+<tr><td>XFER D Surgery General Hotword</td><td>Warm transfer for hotwords, Mon–Fri 8–4. No answer in 5 minutes: High-Priority TE and page the surgeon.</td></tr>
+<tr><td>XFER D Surgery General General</td><td>Reception extension: patient running late.</td></tr>
+<tr><td>Mgr Mounes Aloriqat / Sup. Megan Guerrero</td><td>Teams message for 2 or more contacts about a non-urgent concern.</td></tr>
+<tr><td>Kylee Seiffert</td><td>Email when a page is unacknowledged after 60 minutes and the supervisor could not resolve it.</td></tr></table></div>
+<h3 id="sched-table">Surgeon, scheduler and clinical pool</h3><div class="tbl"><table><tr><th>Surgeon</th><th>Scheduler</th><th>Warm-transfer extension</th><th>Pool</th></tr>
+<tr><td>Bradley, Brand</td><td>Sandy Rojas (26703)</td><td>XFER D General Surgery Bradley Brand Scheduler</td><td>West</td></tr>
+<tr><td>Chichura</td><td>Paula Gianfortune (51107)</td><td>XFER D General Surgery Chichura Scheduler</td><td>not on pool list</td></tr>
+<tr><td>Corrales</td><td>Kara Schwab (42016)</td><td>XFER D General Surgery Corrales Scheduler</td><td>South</td></tr>
+<tr><td>Cox, Richards</td><td>Sandy Casillas (15923)</td><td>XFER D General Surgery Cox Richards Scheduler</td><td>West</td></tr>
+<tr><td>DeHaan, Martirano</td><td>Joanne Armato (65051)</td><td>XFER D General Surgery Dehaan Martirano Scheduler</td><td>West</td></tr>
+<tr><td>Gracias</td><td>Felicia Webb (63205)</td><td>XFER D General Surgery Gracias Scheduler</td><td>South</td></tr>
+<tr><td>Grabowski, Klemine</td><td>Erica Olague (46312)</td><td>XFER D General Surgery Grabowski Klemine Scheduler</td><td>West</td></tr>
+<tr><td>Klemine (clinical questions)</td><td>Naty Mendoza (51207)</td><td>Transfer to her direct number, 872-355-1207</td><td>West</td></tr>
+<tr><td>Grant, Green, Lee, Vallina</td><td>Elisheva Bradley (15282)</td><td>XFER D General Surgery Grant Green Lee Vallina Scheduler</td><td>West</td></tr>
+<tr><td>Katilius</td><td>Lisa Abar (42019)</td><td>XFER D General Surgery Katilius Scheduler</td><td>South</td></tr>
+<tr><td>Kudsi, Montana</td><td>Shannon Roland (15910)</td><td>XFER D General Surgery Kudsi Montana Scheduler</td><td>Kudsi: West; Montana: not on pool list</td></tr>
+<tr><td>Mangat</td><td>Ariana Sepulveda (15212)</td><td>XFER D General Surgery Mangat Scheduler</td><td>West</td></tr>
+<tr><td>Manglano</td><td>Christine Torres, RN (63203)</td><td>XFER D General Surgery Manglano Scheduler</td><td>South</td></tr>
+<tr><td>Wu</td><td>Lucia Burciaga (42018)</td><td>XFER D General Surgery Wu Scheduler</td><td>South</td></tr></table></div>
+<h3>PerfectServe login help</h3><p>Forgot your username or password? PerfectServe Support is available 24/7 at 877-844-7727 or at perfectserve.com/support.</p>
+<p class="top"><a href="#top">Back to the top</a></p></section></div></main>
+<footer><div class="wrap">Built from the Surgery Site Info Grid (rev 10/5/26), Surgery Schedulers (8/19/26), the GenSx paging protocol, Plastic Surgery decision tree (4/24/26), Paging General Info (4/9/26), Paging Tip Sheet (9/23/26), PerfectServe tip sheet (9/19/25), Unacknowledged Pages tip sheet (6/23/26) and the QA guidelines (4/21/26).</div></footer>
+<script>
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var beh = reduce ? 'auto' : 'smooth';
+  function go(id){
+    if(id==='top'){window.scrollTo({top:0,behavior:beh});return;}
+    var el=document.getElementById(id);
+    if(!el) return;
+    if(el.tagName==='DETAILS') el.open=true;
+    var inChart = !!(el.closest && el.closest('svg'));
+    el.scrollIntoView({behavior:beh,block:inChart?'center':'start'});
+  }
+  // small blue notes inside chart boxes -> where they point
+  var NOTES=[
+    [/^then go to Step 4/i,'step4'],
+    [/^then keep handling the call/i,'step3'],
+    [/^route it from Step 3/i,'step3'],
+    [/Section 6/i,'sec-page'],
+    [/scheduler list/i,'sched-table'],
+    [/folder list/i,'folders'],
+    [/insurance rules/i,'ins-rules'],
+    [/provider rules/i,'provider-rules']
+  ];
+  document.querySelectorAll('.chart svg text').forEach(function(t){
+    if(t.closest('g[id^="jump__"]')) return;
+    if(t.getAttribute('font-size')!=='12.00') return;
+    var txt=t.textContent.trim();
+    for(var i=0;i<NOTES.length;i++){
+      if(NOTES[i][0].test(txt)){
+        t.setAttribute('data-go',NOTES[i][1]);
+        t.setAttribute('tabindex','0'); t.setAttribute('role','link');
+        t.setAttribute('aria-label','Jump: '+txt);
+        t.style.cursor='pointer';
+        break;
+      }
+    }
+  });
+  function target(node){
+    var n=node.closest&&node.closest('[data-go]');
+    if(n) return n.getAttribute('data-go');
+    var g=node.closest&&node.closest('g[id^="jump__"]');
+    return g?g.id.split('__')[1]:null;
+  }
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[href^="#"]');
+    if(a){e.preventDefault();go(a.getAttribute('href').slice(1));return;}
+    var t=target(e.target);
+    if(t){e.preventDefault();go(t);}
+  });
+  document.addEventListener('keydown',function(e){
+    if(e.key!=='Enter'&&e.key!==' ')return;
+    var t=target(e.target);
+    if(t){e.preventDefault();go(t);}
+  });
+  document.querySelectorAll('g[id^="jump__"]').forEach(function(g){
+    g.setAttribute('tabindex','0');g.setAttribute('role','link');
+    var tt=g.querySelector('text');g.setAttribute('aria-label','Jump: '+(tt?tt.textContent:'section'));
+  });
+})();
+</script>
+</body></html>
